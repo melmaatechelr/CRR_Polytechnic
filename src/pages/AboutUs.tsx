@@ -6,6 +6,7 @@ const AboutUs = () => {
 
   const tabs = [
     { id: 'college', label: 'About College', icon: Building },
+    { id: 'society', label: 'About Society', icon: Building },
     { id: 'vision', label: 'Vision & Mission', icon: Target },
     { id: 'management', label: 'Management', icon: Users },
     { id: 'principal', label: 'Principal Message', icon: Award },
@@ -63,6 +64,106 @@ The Campus at Vatluru is a place where students from all walks of life are under
                 development, preparing our students not just academically but also professionally and personally 
                 for the challenges of the modern world.
               </p>
+            </div>
+          </div>
+        );
+
+      case 'society':
+        return (
+          <div className="space-y-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">About Society</h2>
+            <p className="text-center text-xl font-semibold text-blue-700 mb-8">SIR CATTAMANCHI RAMALINGA REDDY EDUCATIONAL INSTITUTIONS</p>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 space-y-6">
+              <div className="prose max-w-none text-gray-700 leading-relaxed space-y-4">
+                <p>
+                  In the 1940s there was a long felt need for a full fledged college in the Head Quarters of West Godavari District. This need was fulfilled when late Sri Rao Saheb Damaraju Venkata Rao, the then chairman of the Municipal Council, Eluru, took the initiative in 1944. The Municipal Council under his stewardship enlisted the sympathy and support of the philanthropic citizens in and around Eluru and embarked on a collection drive and deposited Rs.2 lakh 17 thousand in the Municipal Treasury as an earmarked fund for the starting of the college.
+                </p>
+                <p>
+                  The college was inaugurated on 4th July 1945 by Sir Cattamanchi Ramalinga Reddy, the distinguished educationist and the then Vice Chancellor, Andhra University and the college was named after him as "Sir C.R.Reddy Municipal College". It started functioning as a second grade college, with Sri. Subrahmanyam as the Founder Principal.
+                </p>
+                <p>
+                  A constitution was adopted for the Governing Body in the year 1947, according to which the word "Municipal" was dropped from the original name of the college. The name of the College was treated as an institution under Private Management by the Government from 1947.
+                </p>
+                <p>
+                  The College was raised to the status of First Grade with effect from July 1951 when the University granted affiliation for B.Sc Physics (Main) and B.Com Courses. The College was granted further affiliation in Degree Courses for B.A. (Mathematics) and B.A. which were started in July 1954.
+                </p>
+                <p>
+                  The College opened the Pre-University course with effect from July 1957 and three Year Degree Course from June 1958. Subsequently two year Intermediate course was started in the year 1969-70. Degree course under the New Scheme with one main and two ancillaries was introduced from the academic year 1971.
+                </p>
+                <p>
+                  With the help of the philanthropic benefactors, the infrastructure of the college was developed and the Management then felt it proper to start Post Graduate Courses in the College, which were started in the year 1971, followed by Evening College for the employees who wish to improve their qualification.
+                </p>
+                <p>
+                  The Management sincerely felt that the opening of Law Course in the Evening College would help improve the qualification of many graduates. As a result BL Course was started in evening college in 1976-77 and in Day College in 1980.
+                </p>
+                <p>
+                  The Management was of the view that some technical and professional courses should be started to provide better employment avenues for the students of this region. This dream came true when they started a Polytechnic in 1980.
+                </p>
+                <p>
+                  The Management's desire to start a College of Education to train and mould the graduates into ideal teachers took shape in 1984 when B.Ed Course was started.
+                </p>
+                <p>
+                  A Public School was started by the Management with the intention of providing better educational facilities to the children of this town.
+                </p>
+                <p>
+                  The College has become a premier educational institution in Andhra Pradesh. It has grown to be a Mini-University. Considering the all round development and the infrastructural facilities available in the college, the Management was encouraged to apply for the conferment of the Autonomous status and on May 11, 1987 the U G C accorded the status of autonomy to Sir C.R.Reddy College.
+                </p>
+                <p>
+                  The Management started a Women's College in 1987 to cater to the needs of the growing women population in and around Eluru, seeking higher education.
+                </p>
+                <p>
+                  Realizing that there is a great demand for engineering education in these parts the Management started an Engineering College in 1989.
+                </p>
+                <p>
+                  Keeping in view the demand in Pharmaceutical Sciences, the Management started Sir C.R.Reddy College of Pharmaceutical Sciences in November 2007.
+                </p>
+                <p>
+                  Sri Alluri Bapineedu had been the President of the Governing Body for about three decades and was mainly responsible for the phenomenal growth and development of the college. He had been a source of strength and inspiration to the Management, Principal, staff and students. Sri A S Chowdary stepped into the shoes of his father in 1992. Sri VVN Prasad acted as Correspondent and Secretary for more than two decades and involved himself actively in the smooth administration bringing out the growth and development of our institutions till 2003. Later, Sri Gutta Subba Rao acted as secretary till the end of the tenure of the committee. In 2007, the Managing Committee of Sir C.R.Reddy Group of Institutions took charge. Sri Kommareddy Rambabu and Sri Kakarala Rajendra Vara Prasada Rao took charge as President and Secretary respectively. In 2010 Sri Chava Rama Krishna Rao, an educationist and a veteran politician took charge as President and Sri Kakarala Rajendra Vara Prasada Rao was reelected as Secretary.
+                </p>
+                <p>
+                  The present Governing Body under the dynamic leadership of Sri Alluri Indra Kumar took office. We hope the present body with its rich and varied experience and strong commitment would certainly sustain its growth and development and add many more feathers in its cap in the coming years with Dr MBSV Prasad as Secretary.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden mt-8">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4">
+                <h3 className="text-xl font-bold text-white text-center">List of Institutes/Colleges Run by the Society</h3>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-gray-100 border-b-2 border-blue-600">
+                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-700 uppercase tracking-wider">S.No</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-700 uppercase tracking-wider">Name of the Institution</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-700 uppercase tracking-wider">Year of Establishment</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-700 uppercase tracking-wider">Location</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {[
+                      { sno: 1, name: 'Sir C. R. Reddy College (Autonomous)', year: '1945', location: 'Eluru' },
+                      { sno: 2, name: 'Sir C. R. Reddy PG Courses', year: '1971', location: 'Eluru' },
+                      { sno: 3, name: 'Sir C. R. Reddy Polytechnic', year: '1980', location: 'Eluru' },
+                      { sno: 4, name: 'Sir C. R. Reddy College of Education', year: '1984', location: 'Eluru' },
+                      { sno: 5, name: 'Sir C. R. Reddy Public School', year: '1984', location: 'Eluru' },
+                      { sno: 6, name: 'Sir C. R. Reddy PG Courses for Women', year: '1987', location: 'Eluru' },
+                      { sno: 7, name: 'Sir C. R. Reddy Degree College for Women', year: '1987', location: 'Eluru' },
+                      { sno: 8, name: 'Sir C. R. Reddy Junior College for Women', year: '1989', location: 'Eluru' },
+                      { sno: 9, name: 'Sir C. R. Reddy College of Engineering', year: '1989', location: 'Eluru' },
+                      { sno: 10, name: 'Sir C. R. R College of Pharmaceutical Sciences', year: '2007', location: 'Eluru' }
+                    ].map((institution, index) => (
+                      <tr key={index} className={index % 2 === 0 ? 'bg-white hover:bg-blue-50' : 'bg-gray-50 hover:bg-blue-50'}>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{institution.sno}</td>
+                        <td className="px-6 py-4 text-sm text-gray-900">{institution.name}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{institution.year}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{institution.location}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         );
