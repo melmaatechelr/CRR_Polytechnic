@@ -104,8 +104,8 @@ The Campus at Vatluru is a place where students from all walks of life are under
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
-                    Foster innovation, research, and entrepreneurship among students
-                  </li>
+                    To Ensure  A Viable Acadamic Ambience Conductive Intellectual  Growth And Skill  Acquisition 
+ </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
                     Develop ethical, responsible, and globally competent engineers
