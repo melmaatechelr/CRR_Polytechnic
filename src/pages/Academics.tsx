@@ -157,7 +157,7 @@ const Academics = () => {
   const renderCalendar = () => (
     <div className="space-y-8">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Academic Calendar 2024-25</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Academic Calendar 2025-26</h2>
         <p className="text-lg text-gray-600">Important dates and events for the academic year</p>
       </div>
 
