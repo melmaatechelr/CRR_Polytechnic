@@ -53,23 +53,23 @@ const Placements = () => {
     },
     {
       sno: 3,
-      company: 'CSC Academy',
-      issueDate: '2nd March, 2025'
-    },
-    {
-      sno: 4,
-      company: 'Techin IT',
-      issueDate: '6th May, 2025'
-    },
-    {
-      sno: 5,
       company: 'MELMAA PRIVATE LTD.',
       issueDate: '12th November, 2024'
     },
     {
-      sno: 6,
+      sno: 4,
       company: 'ShiftEduTech',
       issueDate: '28th November, 2024'
+    },
+    {
+      sno: 5,
+      company: 'CSC Academy',
+      issueDate: '2nd March, 2025'
+    },
+    {
+      sno: 6,
+      company: 'Techin IT',
+      issueDate: '6th May, 2025'
     }
   ];
 
