@@ -84,9 +84,9 @@ The Campus at Vatluru is a place where students from all walks of life are under
                   <h3 className="text-2xl font-bold text-blue-800">Our Vision</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  To be a premier institution of technical education, recognized globally for excellence in 
-                  engineering education, research, and innovation, producing competent professionals who 
-                  contribute significantly to society and industry.
+                 Sir Cr Reddy Polytechnic Shall Be The Leading Institution Of Higher Professionals, Lecturer’s And Technical  Education.
+To Achieve  And  Maintain  The  Status  Of  Internationally  Reputed  Institue  Of  Excellence  In Technical Education.
+A Common Thread In Vision Is Desired To Produce Graduatdes Who Can Contribute To The Betterment Of Society,industry And Nation.
                 </p>
               </div>
 
