@@ -86,7 +86,7 @@ The Campus at Vatluru is a place where students from all walks of life are under
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
-                    To  Inculcate  Entrepreneurship  Skills & Leadership  Qualities  In  The  Learners  Through A Culture Of Innovation And Excellence. 
+                 Sir Cr Reddy Polytechnic Shall Be The Leading Institution Of Higher Professionals, Lecturer’s And Technical  Education.
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
@@ -102,6 +102,8 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
                 </ul>
               </div>
 
+
+              
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl">
                 <div className="flex items-center mb-6">
                   <div className="bg-green-600 p-3 rounded-full mr-4">
