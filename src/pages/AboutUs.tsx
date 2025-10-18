@@ -171,37 +171,50 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
               <div className="md:flex">
                 <div className="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center p-8">
                   <div className="text-center">
-                    <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Award size={48} className="text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800">Dr. Principal Name</h3>
-                    <p className="text-blue-600 font-semibold">Principal</p>
+                    <img
+                      src="/Principal.png"
+                      alt="Principal"
+                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg"
+                    />
+                    <h3 className="text-xl font-bold text-gray-800">Sri CH. SATHISH BABU</h3>
+                    <p className="text-blue-600 font-semibold">Principal, M.Tech</p>
                   </div>
                 </div>
                 <div className="md:w-2/3 p-8">
                   <h2 className="text-3xl font-bold text-gray-800 mb-6">Principal's Message</h2>
                   <div className="space-y-4 text-gray-700">
                     <p>
-                      "Welcome to SIR.C RAMLINGA REDDY POLYTECHNIC, where we transform dreams into reality 
-                      through quality technical education. As the Principal of this esteemed institution, 
-                      I am proud to lead a team of dedicated faculty and staff who are committed to 
-                      nurturing the next generation of engineers and technologists."
+                      It is my pleasure to present my panorama regarding 34 years of my journey with this
+                      pioneer technical institute, a tycoon of its kind in the entire state of Andhra Pradesh.
+                      Having established a long-long back in 1980, the institute stood as "CREATOR" for so
+                      many "FOLLOWERS" in the field of Technical education.
                     </p>
                     <p>
-                      "Our college has consistently maintained high standards of academic excellence, 
-                      and we continue to evolve with the changing technological landscape. We believe 
-                      in providing not just theoretical knowledge but also practical skills that make 
-                      our students industry-ready from day one."
+                      Under the umbrella of "SIR CRR EDUCATIONAL INSTITUTIONS" a conglomerate of educational
+                      institutions, this Polytechnic is maintained with rapt attention to formulate technicians
+                      enriched with present industry need skills.
                     </p>
                     <p>
-                      "I encourage all our students to make the most of the opportunities available 
-                      here and to strive for excellence in all their endeavors. Together, we will 
-                      continue to uphold the legacy of this great institution."
+                      We run this polytechnic with a mission to provide a stream of quality professionals from
+                      rural and urban to cater the requirements of industry and man power. We are with a vision
+                      to transform every student into industrial leaders and our polytechnic is the center of
+                      excellence in the field of technical education. We send our faculty to faculty development
+                      programs to be updated with the latest knowledge.
+                    </p>
+                    <p>
+                      To fulfill our goals as a learning community we insist that the objectives of students
+                      learning are not compromised. We treat all the students equitably and our student learning
+                      achievements are based on academic performances. We make the students ready for job and
+                      ready for life.
+                    </p>
+                    <p className="italic">
+                      "Education is a social process; education is growth, education is not a preparation for
+                      life but is life itself".
                     </p>
                   </div>
                   <div className="mt-6 pt-6 border-t border-gray-200">
-                    <p className="font-semibold text-gray-800">Dr. Principal Name</p>
-                    <p className="text-blue-600">Principal, CRR Polytechnic</p>
+                    <p className="font-semibold text-gray-800">Sri CH. SATHISH BABU, M.Tech</p>
+                    <p className="text-blue-600">Principal, Sir CRR Polytechnic</p>
                   </div>
                 </div>
               </div>
