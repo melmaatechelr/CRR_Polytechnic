@@ -151,36 +151,98 @@ const Placements = () => {
 
       <div className="bg-white rounded-xl shadow-lg overflow-hidden">
         <div className="bg-blue-600 text-white p-6">
-          <h3 className="text-xl font-bold">Recent Placement Drives</h3>
+          <h3 className="text-xl font-bold">Placement Records for Last Four Years</h3>
         </div>
-        <div className="divide-y divide-gray-200">
-          {placementDrives.map((drive, index) => (
-            <div key={index} className="p-6 hover:bg-gray-50 transition-colors">
-              <div className="flex justify-between items-start">
-                <div className="flex-1">
-                  <h4 className="text-xl font-bold text-gray-800 mb-2">{drive.company}</h4>
-                  <div className="grid md:grid-cols-3 gap-4 text-sm text-gray-600">
-                    <div>
-                      <span className="font-semibold">Date:</span> {drive.date}
-                    </div>
-                    <div>
-                      <span className="font-semibold">Positions:</span> {drive.positions}
-                    </div>
-                    <div>
-                      <span className="font-semibold">Package:</span> {drive.package}
-                    </div>
-                  </div>
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">S.NO.</th>
+                <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">ACADEMIC YEAR</th>
+                <th className="px-6 py-4 text-left text-sm font-semibold text-gray-800">TOTAL COUNT</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="px-6 py-4 text-gray-700">1</td>
+                <td className="px-6 py-4 text-gray-700 font-medium">2023-2024</td>
+                <td className="px-6 py-4 text-gray-700 font-semibold">10</td>
+              </tr>
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="px-6 py-4 text-gray-700">2</td>
+                <td className="px-6 py-4 text-gray-700 font-medium">2022-2023</td>
+                <td className="px-6 py-4 text-gray-700 font-semibold">12</td>
+              </tr>
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="px-6 py-4 text-gray-700">3</td>
+                <td className="px-6 py-4 text-gray-700 font-medium">2021-2022</td>
+                <td className="px-6 py-4 text-gray-700 font-semibold">11</td>
+              </tr>
+              <tr className="hover:bg-gray-50 transition-colors">
+                <td className="px-6 py-4 text-gray-700">4</td>
+                <td className="px-6 py-4 text-gray-700 font-medium">2020-2021</td>
+                <td className="px-6 py-4 text-gray-700 font-semibold">14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="bg-green-600 text-white p-6">
+          <h3 className="text-xl font-bold">List of Recruiters</h3>
+        </div>
+        <div className="p-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <img src="/crr logo.jpg" alt="Isuzu Motors" className="max-w-full max-h-full object-contain" />
                 </div>
-                <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                  drive.status === 'Completed' 
-                    ? 'bg-green-100 text-green-800' 
-                    : 'bg-yellow-100 text-yellow-800'
-                }`}>
-                  {drive.status}
-                </span>
+                <h4 className="font-semibold text-gray-800 text-center">Isuzu Motors Ltd.</h4>
               </div>
             </div>
-          ))}
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">Larsen & Toubro</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">Efftronics Systems Pvt Ltd</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">Deepak Nexgen Foods And Feeds Private Limited</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">VEM Technologies Pvt. Ltd.</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <img src="/Melmaatech Logo Final.PNG" alt="MelmaaTech" className="max-w-full max-h-full object-contain" />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">MelmaaTech</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
