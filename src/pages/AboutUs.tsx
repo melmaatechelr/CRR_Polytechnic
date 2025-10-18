@@ -90,7 +90,8 @@ The Campus at Vatluru is a place where students from all walks of life are under
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
-                    To Ensure  A Viable Acadamic Ambience Conductive Intellectual  Growth And Skill  Acquisition 
+          To Achieve  And  Maintain  The  Status  Of  Internationally  Reputed  Institue  Of  Excellence  In Technical Education.
+
  </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
