@@ -322,7 +322,9 @@ const ContactUs = () => {
               Find Us on Map
             </h2>
             <p className="text-blue-100 text-lg">
-              Visit our campus located in the heart of Vatluru, Andhra Pradesh
+              Visit our Campus , Sir C R Reddy Polytechnic Is Located In A Campus Abutting Nh-5, About 7 Km. From Heart Of Eluru Town, West Godavari District, Andhra Pradesh.eluru (Telugu: ఏలూరు) Is A Town In The State Of Andhra Pradesh, India. It Is The Headquarters Of West Godavari District. Eluru Is Situated On The National Highway Nh5 Connecting Vijayawada And Visakhapatnam. Eluru Was Earlier Called Helapuri And Has A Rich Cultural And Political History.
+The Is Situated Near Vatluru Railway Gate In Eluru And Is On Chennai-howrah High Way And Train Route. A Large Number Of Buses And Trains Run Via This Town. It Is Easily Accessible From Any Part Of The Country By Rail As Well As Road.
+
             </p>
           </div>
           
