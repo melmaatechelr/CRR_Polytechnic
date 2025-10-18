@@ -63,42 +63,31 @@ const Academics = () => {
   ];
 
   const rules = [
-    {
-      category: 'Attendance',
-      rules: [
-        'Minimum 75% attendance is mandatory for all subjects',
-        'Students with less than 75% attendance will not be allowed to appear for examinations',
-        'Medical leave requires proper documentation',
-        'Attendance is calculated separately for theory and practical classes'
-      ]
-    },
-    {
-      category: 'Examinations',
-      rules: [
-        'Students must carry valid ID cards during examinations',
-        'Mobile phones and electronic devices are strictly prohibited',
-        'Malpractice in any form will result in cancellation of examination',
-        'Re-examination fees apply for absent students'
-      ]
-    },
-    {
-      category: 'Discipline',
-      rules: [
-        'Students must maintain proper dress code',
-        'Ragging is strictly prohibited and punishable',
-        'Smoking and consumption of alcohol is banned on campus',
-        'Students must respect faculty and staff members'
-      ]
-    },
-    {
-      category: 'Academic',
-      rules: [
-        'Assignment submission deadlines must be strictly followed',
-        'Plagiarism in assignments and projects is not tolerated',
-        'Students must maintain minimum CGPA for progression',
-        'Industrial training is mandatory for final year students'
-      ]
-    }
+    'All candidates who secure admission in the college are deemed to have agreed to all the rules and regulations, given hereunder and such other rules and regulations as to be added, or amended from time to time.',
+    'Students, admitted in this college, will have to give an undertaking that he/she will not involve in any sort of ragging or any other indisciplinary act; if involved, he/she is liable to be punished accordingly.',
+    'The students must necessarily wear uniform.',
+    'All the students should speak in English in the class rooms as well as in the college campus. They should maintain punctuality and decorum of the college. They should not shout or talk loudly in the college campus.',
+    'Students should not stand in corridors/ near cycle stand for gossiping. Students should not sit on the parapet walls, railings, steps or stair-cases. Loitering in the corridors or in the campus during college working hours is strictly prohibited.',
+    'Students should put up a minimum attendance of 75% in all subjects of the year/semester, as laid down by STATE BOARD OF TECHNICAL EDUCATION(SBTET). Students, falling short of 75% of attendance shall not be allowed for the SEMESTER examinations at the end of the year in case of first year or semester in case of 2nd,and 3 year and shall not be allowed for promotion to the next semester of study. He/she shall be required to repeat the same course of study.',
+    'Students should maintain strict discipline inside the class rooms as well as in the college campus. They should keep the class rooms/college campus neat and tidy.',
+    'Students should not bring cell phones to the college. If any student is found with a cell phone, it will be taken away from him/her and confiscated by the principal as a part of disciplinary action.',
+    'Smoking in the college campus is strictly prohibited.',
+    'The gates of the college will be closed except during break time.',
+    'Names, Slogans, Sticking of posters, pamphlets on number plates/vehicles are strictly prohibited.',
+    'Ragging is strictly prohibited as per Government Orders.',
+    'Students should display identity cards on person during their stay in the college campus.',
+    'No student shall leave the classroom without the permission of the teacher or until the class is over.',
+    'Students should keep their vehicles only at the places allotted for that purpose.',
+    'Students should not bring any unauthorized persons into the campus.',
+    'Students are prohibited from resorting to strikes and demonstrations, as it shall automatically result in suspension from the college.',
+    'Students are prohibited organizing any meetings or entertainment programmes or collection of money for any purpose within the college or outside the college without the permission of the Principal.',
+    'Criticizing or abusing the girl students in foul language is strictly prohibited in the campus.',
+    'Organizing birthday or any other personal functions within the campus is strictly prohibited.',
+    'No student should be present in the canteen during the class work.',
+    'Students are expected to spend their free time in the Library/Reading Room.',
+    'A student who disturbs a lesson or makes mischief in a class should be expelled from the class.',
+    'A fine will be imposed if anybody behaves contrary to the above rules and the amount so collected will be utilized for the student welfare activities.',
+    'All students admitted into this college, will be required to pay the prescribed tuition fee and other specified fees. Failure of the same will result in the cancellation of admission. No portion of fees will be refunded under any circumstances. If any student wishes to change the college or discontinue the course at any time for any reason, he/she shall not be permitted to do so unless he/she pays the balance amount of fees for the remaining years of course of study. His/her original certificates including T.C., etc., will be issued only after all the dues stated above are cleared by the student.'
   ];
 
   const renderCourses = () => (
@@ -288,32 +277,30 @@ const Academics = () => {
         <p className="text-lg text-gray-600">Guidelines for maintaining academic excellence and discipline</p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8">
-        {rules.map((section, index) => (
-          <div key={index} className="bg-white rounded-xl shadow-lg p-6">
-            <div className="flex items-center mb-6">
-              <div className="bg-blue-100 p-3 rounded-full mr-4">
-                <Shield className="text-blue-600" size={24} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800">{section.category}</h3>
-            </div>
-            <ul className="space-y-3">
-              {section.rules.map((rule, ruleIndex) => (
-                <li key={ruleIndex} className="flex items-start">
-                  <span className="text-blue-600 mr-3 mt-1">•</span>
-                  <span className="text-gray-700">{rule}</span>
-                </li>
-              ))}
-            </ul>
+      <div className="bg-white rounded-xl shadow-lg p-8">
+        <div className="flex items-center mb-6">
+          <div className="bg-blue-100 p-3 rounded-full mr-4">
+            <Shield className="text-blue-600" size={24} />
           </div>
-        ))}
+          <h3 className="text-xl font-bold text-gray-800">College Rules & Regulations</h3>
+        </div>
+        <div className="space-y-4">
+          {rules.map((rule, index) => (
+            <div key={index} className="flex items-start border-b border-gray-100 pb-4 last:border-b-0">
+              <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 font-semibold text-sm">
+                {index + 1}
+              </span>
+              <p className="text-gray-700 leading-relaxed pt-1">{rule}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="bg-red-50 border border-red-200 rounded-xl p-6">
         <h3 className="text-xl font-bold text-red-800 mb-4">Important Notice</h3>
         <p className="text-red-700">
-          All students are required to read and understand the complete rules and regulations. 
-          Violation of any rule may result in disciplinary action including suspension or expulsion. 
+          All students are required to read and understand the complete rules and regulations.
+          Violation of any rule may result in disciplinary action including suspension or expulsion.
           For detailed regulations, please refer to the student handbook.
         </p>
         <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
