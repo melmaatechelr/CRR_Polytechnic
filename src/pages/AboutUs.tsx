@@ -112,8 +112,7 @@ To Develop Compitent  Engineering Professionals Through High Quality Acadamic In
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
-                    Maintain strong industry partnerships for practical exposure
-                  </li>
+To Provide The Students With Knowledge,skills ,values And Sensitivity To Face The Challenges In Both Acadimic And Personal Life.                  </li>
                 </ul>
               </div>
             </div>
