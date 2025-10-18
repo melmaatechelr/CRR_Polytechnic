@@ -362,11 +362,7 @@ const Academics = () => {
           All students are required to read and understand the complete rules and regulations.
           Violation of any rule may result in disciplinary action including suspension or expulsion.
           For detailed regulations, please refer to the student handbook.
-        </p>
-        <button className="mt-4 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-          Download Student Handbook
-        </button>
-      </div>
+       </div>
     </div>
   );
 
