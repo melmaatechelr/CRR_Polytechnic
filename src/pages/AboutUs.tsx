@@ -96,7 +96,7 @@ The Campus at Vatluru is a place where students from all walks of life are under
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
 A Common Thread In Vision Is Desired To Produce Graduatdes Who Can Contribute To The Betterment Of Society,industry And Nation.                  </li>
-\                </ul>
+                </ul>
               </div>
 
 
