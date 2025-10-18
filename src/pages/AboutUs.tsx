@@ -161,40 +161,6 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
                 className="rounded-xl shadow-lg max-w-full h-auto"
               />
             </div>
-
-            <div className="grid lg:grid-cols-3 gap-8">
-              {[
-                {
-                  name: 'Sri. C. Ramlinga Reddy',
-                  position: 'Chairman & Founder',
-                  image: '/api/placeholder/200/200',
-                  description: 'Visionary leader with 30+ years in education sector'
-                },
-                {
-                  name: 'Smt. Lakshmi Reddy',
-                  position: 'Vice Chairperson',
-                  image: '/api/placeholder/200/200',
-                  description: 'Educational administrator with focus on student welfare'
-                },
-                {
-                  name: 'Sri. Venkat Reddy',
-                  position: 'Managing Director',
-                  image: '/api/placeholder/200/200',
-                  description: 'Industry expert with extensive corporate experience'
-                }
-              ].map((member, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                    <Users size={64} className="text-blue-600" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
-                    <p className="text-blue-600 font-semibold mb-3">{member.position}</p>
-                    <p className="text-gray-600 text-sm">{member.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         );
 
