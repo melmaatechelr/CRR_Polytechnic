@@ -10,49 +10,56 @@ const Academics = () => {
       name: 'Diploma in Civil Engineering',
       duration: '3 Years',
       intake: '66',
-      description: 'Comprehensive program covering construction, structural design, and infrastructure development.'
+      description: 'Comprehensive program covering construction, structural design, and infrastructure development.',
+      curriculumUrl: '/Curriculums/DCE-Curriculum.pdf'
     },
     {
       code: 'DCME',
       name: 'Diploma in Computer Engineering',
       duration: '3 Years',
       intake: '198',
-      description: 'Modern curriculum focusing on programming, software development, and emerging technologies.'
+      description: 'Modern curriculum focusing on programming, software development, and emerging technologies.',
+      curriculumUrl: '/Curriculums/DCME-Curriculum.pdf'
     },
     {
       code: 'DECE',
       name: 'Diploma in Electronics and Communication Engineering',
       duration: '3 Years',
       intake: '264',
-      description: 'Advanced program in electronics, communication systems, and signal processing.'
+      description: 'Advanced program in electronics, communication systems, and signal processing.',
+      curriculumUrl: '/Curriculums/DECE-Curriculum.pdf'
     },
     {
       code: 'DEEE',
       name: 'Diploma in Electrical and Electronics Engineering',
       duration: '3 Years',
       intake: '66',
-      description: 'Integrated approach to electrical systems, electronics, and power engineering.'
+      description: 'Integrated approach to electrical systems, electronics, and power engineering.',
+      curriculumUrl: '/Curriculums/DEEE-Curriculum.pdf'
     },
     {
       code: 'DME',
       name: 'Diploma in Mechanical Engineering',
       duration: '3 Years',
       intake: '132',
-      description: 'Traditional engineering discipline covering design, manufacturing, and thermal systems.'
+      description: 'Traditional engineering discipline covering design, manufacturing, and thermal systems.',
+      curriculumUrl: '/Curriculums/DME-Curriculum.pdf'
     },
     {
       code: 'DAIM',
       name: 'Diploma in Artificial Intelligence and Machine Learning',
       duration: '3 Years',
       intake: '66',
-      description: 'Cutting-edge program in AI, ML, data science, and intelligent systems.'
+      description: 'Cutting-edge program in AI, ML, data science, and intelligent systems.',
+      curriculumUrl: '/Curriculums/DAIM-Curriculum.pdf'
     },
     {
       code: 'DCCN',
       name: 'Diploma in Communication and Computer Networking',
       duration: '3 Years',
       intake: '66',
-      description: 'Specialized program in networking, cybersecurity, and communication systems.'
+      description: 'Specialized program in networking, cybersecurity, and communication systems.',
+      curriculumUrl: '/Curriculums/CCN-Curriculum.pdf'
     }
   ];
 
@@ -146,9 +153,14 @@ const Academics = () => {
             </div>
             <p className="text-gray-700 mb-4">{course.description}</p>
             <div className="flex justify-between items-center">
-              <button className="text-blue-600 hover:text-blue-800 font-semibold">
+              <a
+                href={course.curriculumUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
                 View Curriculum
-              </button>
+              </a>
               <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
                 Apply Now
               </button>
