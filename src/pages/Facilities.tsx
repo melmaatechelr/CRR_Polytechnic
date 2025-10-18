@@ -1,0 +1,346 @@
+import React from 'react';
+import { 
+  Building, 
+  FlaskConical, 
+  BookOpen, 
+  Home, 
+  Presentation, 
+  Gamepad2, 
+  Trophy, 
+  Volume2, 
+  Coffee, 
+  CreditCard, 
+  Droplets, 
+  Sun 
+} from 'lucide-react';
+
+const Facilities = () => {
+  const facilities = [
+    {
+      id: 'lecture-halls',
+      name: 'Lecture Halls',
+      icon: Building,
+      color: 'from-blue-500 to-blue-600',
+      description: 'Modern, well-ventilated classrooms equipped with smart boards and audio-visual systems',
+      features: [
+        '25 spacious lecture halls',
+        'Smart board technology',
+        'Audio-visual equipment',
+        'Air-conditioned rooms',
+        'Comfortable seating for 60 students',
+        'Wi-Fi connectivity'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'laboratories',
+      name: 'Laboratories',
+      icon: FlaskConical,
+      color: 'from-green-500 to-green-600',
+      description: 'State-of-the-art laboratories with modern equipment for practical learning',
+      features: [
+        '50+ specialized laboratories',
+        'Latest equipment and instruments',
+        'Safety protocols implemented',
+        'Individual workstations',
+        'Expert lab assistants',
+        'Regular equipment maintenance'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'library',
+      name: 'Library',
+      icon: BookOpen,
+      color: 'from-purple-500 to-purple-600',
+      description: 'Comprehensive library with vast collection of books, journals, and digital resources',
+      features: [
+        '25,000+ books collection',
+        'Digital library access',
+        'Technical journals and magazines',
+        'Internet browsing facility',
+        'Reading rooms with 200 seats',
+        'Reference section'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'hostels',
+      name: 'Hostels',
+      icon: Home,
+      color: 'from-orange-500 to-orange-600',
+      description: 'Comfortable accommodation facilities for outstation students',
+      features: [
+        'Separate hostels for boys and girls',
+        'Accommodation for 500+ students',
+        'Mess facility with nutritious food',
+        '24/7 security',
+        'Recreation rooms',
+        'Wi-Fi connectivity'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'seminar-hall',
+      name: 'AC Seminar Hall',
+      icon: Presentation,
+      color: 'from-red-500 to-red-600',
+      description: 'Air-conditioned seminar hall for conferences, workshops, and special events',
+      features: [
+        'Seating capacity of 300',
+        'Central air conditioning',
+        'Advanced audio-visual systems',
+        'Stage with modern lighting',
+        'Wireless microphone system',
+        'Recording facilities'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'indoor-games',
+      name: 'Indoor Games',
+      icon: Gamepad2,
+      color: 'from-indigo-500 to-indigo-600',
+      description: 'Indoor sports facilities for recreation and competitive games',
+      features: [
+        'Table tennis tables',
+        'Badminton courts',
+        'Chess and carrom boards',
+        'Gymnasium equipment',
+        'Yoga and meditation hall',
+        'Sports equipment storage'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'outdoor-sports',
+      name: 'Outdoor Sports & Games',
+      icon: Trophy,
+      color: 'from-teal-500 to-teal-600',
+      description: 'Extensive outdoor sports facilities for various games and athletics',
+      features: [
+        'Cricket ground with pavilion',
+        'Football field',
+        'Basketball courts',
+        'Volleyball courts',
+        'Athletic track',
+        'Sports equipment room'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'auditorium',
+      name: 'Open Auditorium',
+      icon: Volume2,
+      color: 'from-pink-500 to-pink-600',
+      description: 'Large open-air auditorium for cultural events and large gatherings',
+      features: [
+        'Seating capacity of 1000+',
+        'Stage with professional lighting',
+        'Sound system with amplifiers',
+        'Green room facilities',
+        'Parking area',
+        'Emergency exits'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'canteen',
+      name: 'Canteen',
+      icon: Coffee,
+      color: 'from-yellow-500 to-yellow-600',
+      description: 'Hygienic canteen serving fresh and nutritious food at affordable prices',
+      features: [
+        'Seating for 200 students',
+        'Hygienic food preparation',
+        'Variety of cuisines',
+        'Affordable pricing',
+        'Fresh ingredients daily',
+        'Clean dining environment'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'bank',
+      name: 'Bank',
+      icon: CreditCard,
+      color: 'from-gray-500 to-gray-600',
+      description: 'On-campus banking facility for student and staff convenience',
+      features: [
+        'ATM facility available 24/7',
+        'Account opening services',
+        'Loan assistance for students',
+        'Fee payment facility',
+        'Money transfer services',
+        'Financial counseling'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'water-plant',
+      name: 'Mineral Water Plant',
+      icon: Droplets,
+      color: 'from-cyan-500 to-cyan-600',
+      description: 'On-campus mineral water plant ensuring pure drinking water supply',
+      features: [
+        'RO purification system',
+        'Regular quality testing',
+        'Bottled water production',
+        'Water coolers in all buildings',
+        'Maintenance by trained staff',
+        'Eco-friendly packaging'
+      ],
+      image: '/api/placeholder/400/300'
+    },
+    {
+      id: 'solar-power',
+      name: 'Solar Power',
+      icon: Sun,
+      color: 'from-amber-500 to-amber-600',
+      description: 'Renewable energy initiative with solar power generation for campus needs',
+      features: [
+        '500 KW solar power plant',
+        'Reduced electricity costs',
+        'Environment-friendly energy',
+        'Battery backup system',
+        'Grid-tied solar system',
+        'Regular maintenance program'
+      ],
+      image: '/api/placeholder/400/300'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Campus Facilities</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover our world-class infrastructure and facilities designed to provide 
+            the best learning environment and campus experience for our students.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+          {facilities.map((facility) => (
+            <div key={facility.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              {/* Header */}
+              <div className={`bg-gradient-to-r ${facility.color} p-6 text-white`}>
+                <div className="flex items-center mb-4">
+                  <facility.icon size={40} className="mr-4" />
+                  <h2 className="text-2xl font-bold">{facility.name}</h2>
+                </div>
+                <p className="text-white/90">{facility.description}</p>
+              </div>
+
+              {/* Content */}
+              <div className="p-6">
+                {/* Image placeholder */}
+                <div className="bg-gray-200 h-48 rounded-lg mb-6 flex items-center justify-center">
+                  <facility.icon size={64} className="text-gray-400" />
+                </div>
+
+                {/* Features */}
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">Key Features</h3>
+                <ul className="space-y-2">
+                  {facility.features.map((feature, index) => (
+                    <li key={index} className="flex items-start text-gray-700">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                      <span className="text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Action Button */}
+                <button className="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                  View Gallery
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Additional Information */}
+        <div className="mt-16 bg-white rounded-xl shadow-lg p-8">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Facility Highlights</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building className="text-blue-600" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Modern Infrastructure</h3>
+              <p className="text-gray-600 text-sm">State-of-the-art buildings with contemporary design and functionality</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FlaskConical className="text-green-600" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Advanced Labs</h3>
+              <p className="text-gray-600 text-sm">Well-equipped laboratories with latest technology and safety measures</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Trophy className="text-purple-600" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Sports Excellence</h3>
+              <p className="text-gray-600 text-sm">Comprehensive sports facilities for physical fitness and recreation</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Sun className="text-orange-600" size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Green Campus</h3>
+              <p className="text-gray-600 text-sm">Eco-friendly initiatives including solar power and water conservation</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Campus Statistics */}
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">Campus by Numbers</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-blue-200">Acres Campus</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">75+</div>
+              <div className="text-blue-200">Classrooms & Labs</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">500+</div>
+              <div className="text-blue-200">Hostel Capacity</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold mb-2">25K+</div>
+              <div className="text-blue-200">Library Books</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact for Facility Tours */}
+        <div className="mt-16 bg-white rounded-xl shadow-lg p-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Visit Our Campus</h2>
+          <p className="text-lg text-gray-600 mb-6">
+            Experience our world-class facilities firsthand. Schedule a campus tour today!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+              Schedule Campus Tour
+            </button>
+            <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors font-semibold">
+              Download Brochure
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Facilities;
