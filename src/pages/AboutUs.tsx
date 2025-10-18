@@ -216,10 +216,12 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
               <div className="md:flex">
                 <div className="md:w-1/3 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center p-8">
                   <div className="text-center">
-                    <div className="w-32 h-32 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Mail size={48} className="text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800">Sri. Correspondent Name</h3>
+                    <img
+                      src="/Correspondents.png"
+                      alt="Correspondent"
+                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-white shadow-lg"
+                    />
+                    <h3 className="text-xl font-bold text-gray-800">Sri Vempalli Kalki Satyanarayana</h3>
                     <p className="text-green-600 font-semibold">Correspondent</p>
                   </div>
                 </div>
@@ -227,23 +229,23 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
                   <h2 className="text-3xl font-bold text-gray-800 mb-6">Correspondent's Message</h2>
                   <div className="space-y-4 text-gray-700">
                     <p>
-                      "It gives me immense pleasure to welcome you to SIR.C RAMLINGA REDDY POLYTECHNIC. 
-                      As the Correspondent of this institution, I have witnessed the remarkable growth 
-                      and achievements of our college over the years."
+                      I consider it a great honor to be an essential part of this philanthropic institution.
+                      SIR C.RAMALINGA REDDY POLYTECHNIC has a history crowned with glory and achievements.
+                      It has regard for rural student development. It is a full-fledged polytechnic college
+                      caters the needs of present generation in technical education.
                     </p>
                     <p>
-                      "Our commitment to providing quality education remains unwavering. We have 
-                      continuously invested in infrastructure, faculty development, and student 
-                      facilities to ensure that our students receive the best possible education."
+                      Our institution works to transform every individual into industrial professional.
+                      The institution is determined to give quality education. Faculty strive hard to give
+                      their best to the students with a motive of success.
                     </p>
                     <p>
-                      "I am confident that our students will continue to excel and make significant 
-                      contributions to society. We remain dedicated to fostering an environment 
-                      of learning, innovation, and growth."
+                      Education makes children less dependent on others and opens doors to better jobs
+                      and career possibilities.
                     </p>
                   </div>
                   <div className="mt-6 pt-6 border-t border-gray-200">
-                    <p className="font-semibold text-gray-800">Sri. Correspondent Name</p>
+                    <p className="font-semibold text-gray-800">Sri Vempalli Kalki Satyanarayana</p>
                     <p className="text-green-600">Correspondent, CRR Polytechnic</p>
                   </div>
                 </div>
