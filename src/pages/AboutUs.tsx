@@ -100,7 +100,7 @@ The Campus at Vatluru is a place where students from all walks of life are under
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
-                    Provide quality technical education with industry-relevant curriculum
+                    To  Inculcate  Entrepreneurship  Skills & Leadership  Qualities  In  The  Learners  Through A Culture Of Innovation And Excellence. 
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
