@@ -95,12 +95,8 @@ The Campus at Vatluru is a place where students from all walks of life are under
  </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
-To Develop Compitent  Engineering Professionals Through High Quality Acadamic Instrucions And  Industry  Collaborations  ,with A Focus On Sustainable And Inclusive Technology.
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">•</span>
-To Provide The Students With Knowledge,skills ,values And Sensitivity To Face The Challenges In Both Acadimic And Personal Life.                  </li>
-                </ul>
+A Common Thread In Vision Is Desired To Produce Graduatdes Who Can Contribute To The Betterment Of Society,industry And Nation.                  </li>
+\                </ul>
               </div>
 
 
