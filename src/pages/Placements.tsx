@@ -188,64 +188,6 @@ const Placements = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-        <div className="bg-green-600 text-white p-6">
-          <h3 className="text-xl font-bold">List of Recruiters</h3>
-        </div>
-        <div className="p-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
-              <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <img src="/crr logo.jpg" alt="Isuzu Motors" className="max-w-full max-h-full object-contain" />
-                </div>
-                <h4 className="font-semibold text-gray-800 text-center">Isuzu Motors Ltd.</h4>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
-              <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
-                </div>
-                <h4 className="font-semibold text-gray-800 text-center">Larsen & Toubro</h4>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
-              <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
-                </div>
-                <h4 className="font-semibold text-gray-800 text-center">Efftronics Systems Pvt Ltd</h4>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
-              <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
-                </div>
-                <h4 className="font-semibold text-gray-800 text-center">Deepak Nexgen Foods And Feeds Private Limited</h4>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
-              <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
-                </div>
-                <h4 className="font-semibold text-gray-800 text-center">VEM Technologies Pvt. Ltd.</h4>
-              </div>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
-              <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <img src="/Melmaatech Logo Final.PNG" alt="MelmaaTech" className="max-w-full max-h-full object-contain" />
-                </div>
-                <h4 className="font-semibold text-gray-800 text-center">MelmaaTech</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="bg-white rounded-xl shadow-lg p-8">
         <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Placement Process</h3>
         <div className="grid md:grid-cols-4 gap-6">
@@ -337,56 +279,103 @@ const Placements = () => {
   const renderRecruiters = () => (
     <div className="space-y-8">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Recruiters</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">List of Recruiters</h2>
         <p className="text-lg text-gray-600">Leading companies that trust our graduates</p>
       </div>
 
-      <div className="bg-white rounded-xl shadow-lg p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Top Recruiting Companies</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {topRecruiters.map((company, index) => (
-            <div key={index} className="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 transition-colors">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Building className="text-blue-600" size={24} />
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="bg-blue-600 text-white p-6">
+          <h3 className="text-xl font-bold">Our Recruiting Partners</h3>
+        </div>
+        <div className="p-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <img src="/crr logo.jpg" alt="Isuzu Motors" className="max-w-full max-h-full object-contain" />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">Isuzu Motors Ltd.</h4>
               </div>
-              <p className="font-semibold text-gray-800">{company}</p>
             </div>
-          ))}
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">Larsen & Toubro</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">Efftronics Systems Pvt Ltd</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">Deepak Nexgen Foods And Feeds Private Limited</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <Building className="text-blue-600" size={48} />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">VEM Technologies Pvt. Ltd.</h4>
+              </div>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
+                  <img src="/Melmaatech Logo Final.PNG" alt="MelmaaTech" className="max-w-full max-h-full object-contain" />
+                </div>
+                <h4 className="font-semibold text-gray-800 text-center">MelmaaTech</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">IT Sector</h3>
-          <ul className="space-y-2 text-gray-700">
-            <li>• Software Development</li>
-            <li>• Web Development</li>
-            <li>• Mobile App Development</li>
-            <li>• Database Administration</li>
-            <li>• System Administration</li>
-          </ul>
-        </div>
+      <div className="bg-blue-50 rounded-xl p-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Career Opportunities</h3>
+        <div className="grid lg:grid-cols-3 gap-8">
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">IT Sector</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>• Software Development</li>
+              <li>• Web Development</li>
+              <li>• Mobile App Development</li>
+              <li>• Database Administration</li>
+              <li>• System Administration</li>
+            </ul>
+          </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">Core Engineering</h3>
-          <ul className="space-y-2 text-gray-700">
-            <li>• Design Engineering</li>
-            <li>• Production Engineering</li>
-            <li>• Quality Control</li>
-            <li>• Project Management</li>
-            <li>• Technical Support</li>
-          </ul>
-        </div>
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Core Engineering</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>• Design Engineering</li>
+              <li>• Production Engineering</li>
+              <li>• Quality Control</li>
+              <li>• Project Management</li>
+              <li>• Technical Support</li>
+            </ul>
+          </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <h3 className="text-xl font-bold text-gray-800 mb-4">Emerging Fields</h3>
-          <ul className="space-y-2 text-gray-700">
-            <li>• Data Science</li>
-            <li>• Artificial Intelligence</li>
-            <li>• IoT Development</li>
-            <li>• Cybersecurity</li>
-            <li>• Cloud Computing</li>
-          </ul>
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Emerging Fields</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li>• Data Science</li>
+              <li>• Artificial Intelligence</li>
+              <li>• IoT Development</li>
+              <li>• Cybersecurity</li>
+              <li>• Cloud Computing</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
