@@ -6,45 +6,52 @@ const Academics = () => {
 
   const courses = [
     {
-      code: 'DCME',
+      code: 'DCE',
       name: 'Diploma in Civil Engineering',
       duration: '3 Years',
-      intake: '60',
+      intake: '66',
       description: 'Comprehensive program covering construction, structural design, and infrastructure development.'
     },
     {
-      code: 'DCE',
+      code: 'DCME',
       name: 'Diploma in Computer Engineering',
       duration: '3 Years',
-      intake: '60',
+      intake: '198',
       description: 'Modern curriculum focusing on programming, software development, and emerging technologies.'
     },
     {
-      code: 'DEEE',
-      name: 'Diploma in Electrical & Electronics Engineering',
+      code: 'DECE',
+      name: 'Diploma in Electronics and Communication Engineering',
       duration: '3 Years',
-      intake: '60',
+      intake: '264',
+      description: 'Advanced program in electronics, communication systems, and signal processing.'
+    },
+    {
+      code: 'DEEE',
+      name: 'Diploma in Electrical and Electronics Engineering',
+      duration: '3 Years',
+      intake: '66',
       description: 'Integrated approach to electrical systems, electronics, and power engineering.'
     },
     {
       code: 'DME',
       name: 'Diploma in Mechanical Engineering',
       duration: '3 Years',
-      intake: '60',
+      intake: '132',
       description: 'Traditional engineering discipline covering design, manufacturing, and thermal systems.'
     },
     {
-      code: 'DAIML',
-      name: 'Diploma in Artificial Intelligence & Machine Learning',
+      code: 'DAIM',
+      name: 'Diploma in Artificial Intelligence and Machine Learning',
       duration: '3 Years',
-      intake: '30',
+      intake: '66',
       description: 'Cutting-edge program in AI, ML, data science, and intelligent systems.'
     },
     {
       code: 'DCCN',
-      name: 'Diploma in Computer Communication Networks',
+      name: 'Diploma in Communication and Computer Networking',
       duration: '3 Years',
-      intake: '30',
+      intake: '66',
       description: 'Specialized program in networking, cybersecurity, and communication systems.'
     }
   ];
