@@ -153,6 +153,8 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
         return (
           <div className="space-y-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Management Team</h2>
+            <p className="text-center text-xl font-semibold text-gray-700 mb-4">SIR CATTAMANCHI RAMALINGA REDDY EDUCATIONAL INSTITUTIONS, ELURU-534007</p>
+            <p className="text-center text-lg font-semibold text-gray-600 mb-6">MANAGING COMMITTEE - 2025</p>
 
             <div className="mb-8 flex justify-center">
               <img
@@ -160,6 +162,38 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
                 alt="Management Team"
                 className="rounded-xl shadow-lg max-w-full h-auto"
               />
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4">
+                <h3 className="text-xl font-bold text-white text-center">Office Bearers of the Managing Committee</h3>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-gray-100 border-b-2 border-blue-600">
+                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-700 uppercase tracking-wider w-1/3">Position</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-gray-700 uppercase tracking-wider w-2/3">Name</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {[
+                      { position: 'President', name: 'Sri ALLURI INDRA KUMAR' },
+                      { position: 'Vice-President', name: 'Dr V.V. BALA KRISHNA RAO' },
+                      { position: 'Vice-President', name: 'Sri A.V. SUBRAHMANYAM' },
+                      { position: 'Secretary', name: 'Dr M.B.S.V PRASAD' },
+                      { position: 'Joint Secretary', name: 'Sri VANKINENI BHANU PRAKASH' },
+                      { position: 'Joint Secretary', name: 'Sri VALLABANENI SREE KRISHNA' },
+                      { position: 'Treasurer', name: 'Sri B.B.V.V PRASADA RAO' }
+                    ].map((member, index) => (
+                      <tr key={index} className={index % 2 === 0 ? 'bg-white hover:bg-blue-50' : 'bg-gray-50 hover:bg-blue-50'}>
+                        <td className="px-6 py-4 text-sm font-semibold text-gray-900">{member.position}</td>
+                        <td className="px-6 py-4 text-sm text-gray-800">{member.name}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         );
