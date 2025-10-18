@@ -361,7 +361,7 @@ const Academics = () => {
         <p className="text-red-700">
           All students are required to read and understand the complete rules and regulations.
           Violation of any rule may result in disciplinary action including suspension or expulsion.
-          For detailed regulations, please refer to the student handbook.
+          For detailed regulations, please refer to the above student Rules & Regulations 
         </p>
        </div>
     </div>
