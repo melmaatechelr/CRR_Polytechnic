@@ -57,16 +57,41 @@ const Academics = () => {
   ];
 
   const academicCalendar = [
-    { event: 'Admission Process Begins', date: 'June 1, 2024', type: 'admission' },
-    { event: 'First Semester Begins', date: 'July 15, 2024', type: 'semester' },
-    { event: 'Mid-Semester Examinations', date: 'September 15-20, 2024', type: 'exam' },
-    { event: 'Diwali Break', date: 'October 28 - November 5, 2024', type: 'holiday' },
-    { event: 'End Semester Examinations', date: 'December 10-20, 2024', type: 'exam' },
-    { event: 'Winter Break', date: 'December 21, 2024 - January 5, 2025', type: 'holiday' },
-    { event: 'Second Semester Begins', date: 'January 6, 2025', type: 'semester' },
-    { event: 'Technical Symposium', date: 'February 15-16, 2025', type: 'event' },
-    { event: 'Mid-Semester Examinations', date: 'March 15-20, 2025', type: 'exam' },
-    { event: 'End Semester Examinations', date: 'May 10-20, 2025', type: 'exam' }
+    { event: '1st Year - Commencement of Class Work', date: 'June 9, 2025', type: 'semester' },
+    { event: '1st Year - Unit Test I', date: 'September 22-24, 2025', type: 'exam' },
+    { event: 'III, V, VII Semester - Commencement of Class Work', date: 'June 9, 2025', type: 'semester' },
+    { event: 'III, V, VII Semester - Unit Test I', date: 'August 11-14, 2025', type: 'exam' },
+    { event: 'Dussehra Holidays', date: 'September 28 - October 5, 2025', type: 'holiday' },
+    { event: 'III, V Semester (1st Batch) - Last Working Day', date: 'October 25, 2025', type: 'semester' },
+    { event: 'III, V Semester - Unit Test II', date: 'October 22-25, 2025', type: 'exam' },
+    { event: 'III, V Semester - Practical Examinations', date: 'October 27 - November 1, 2025', type: 'exam' },
+    { event: 'III, V Semester - Theory Examinations', date: 'November 3-19, 2025', type: 'exam' },
+    { event: 'IV, V Semester (2nd Batch) - Commencement of Class Work', date: 'November 24, 2025', type: 'semester' },
+    { event: '1st Year - Unit Test II', date: 'December 18-20, 2025', type: 'exam' },
+    { event: 'D.Pharmacy 1st Year - Unit Test I', date: 'December 18-20, 2025', type: 'exam' },
+    { event: 'Sankranti Holidays', date: 'January 10-18, 2026', type: 'holiday' },
+    { event: 'VII Semester - Unit Test I', date: 'January 22-24, 2026', type: 'exam' },
+    { event: '1st Year - Unit Test III', date: 'March 11-13, 2026', type: 'exam' },
+    { event: '1st Year - Last Working Day', date: 'March 13, 2026', type: 'semester' },
+    { event: '1st Year - Practical Examinations', date: 'March 14-17, 2026', type: 'exam' },
+    { event: 'D.Pharmacy 2nd Year - Unit Test II', date: 'March 16-18, 2026', type: 'exam' },
+    { event: '1st Year - Theory Examinations', date: 'March 23 - April 4, 2026', type: 'exam' },
+    { event: 'IV, V Semester (2nd Batch) - Last Working Day', date: 'March 31, 2026', type: 'semester' },
+    { event: 'IV, V Semester - Unit Test II', date: 'March 28-31, 2026', type: 'exam' },
+    { event: 'IV, V Semester - Practical Examinations', date: 'April 1-4, 2026', type: 'exam' },
+    { event: 'IV, V Semester - Theory Examinations', date: 'April 6-22, 2026', type: 'exam' },
+    { event: 'Summer Vacation', date: 'May 9 - June 7, 2026', type: 'holiday' },
+    { event: 'D.Pharmacy 1st Year - Last Working Day', date: 'June 12, 2026', type: 'semester' },
+    { event: 'D.Pharmacy 1st Year - Practical Examinations', date: 'June 15-20, 2026', type: 'exam' },
+    { event: 'D.Pharmacy 2nd Year - Unit Test III', date: 'June 10-12, 2026', type: 'exam' },
+    { event: 'D.Pharmacy 1st Year - Theory Examinations', date: 'June 22 - July 4, 2026', type: 'exam' },
+    { event: 'Industrial Training (6 months) for 3 Year Courses', date: 'May 15, 2025 (1st Spell) / Nov 24, 2025 (2nd Spell)', type: 'event' },
+    { event: 'Industrial Training (1 year) for 3½ Year Courses', date: 'From May 15, 2025', type: 'event' },
+    { event: 'Campus Placement Drives', date: 'January - April 2026', type: 'event' },
+    { event: 'Inter Polytechnic Sports & Games Meet', date: '1st Week of December (Regional)', type: 'event' },
+    { event: 'Alumni Meet', date: 'March 2026', type: 'event' },
+    { event: 'Annual Day', date: 'March 2026', type: 'event' },
+    { event: 'Job Achievers Day', date: 'March 2026', type: 'event' }
   ];
 
   const rules = [
@@ -165,7 +190,7 @@ const Academics = () => {
         <div className="bg-blue-600 text-white p-6">
           <h3 className="text-xl font-bold flex items-center">
             <Calendar className="mr-3" size={24} />
-            Academic Year 2024-25
+            Academic Year 2025-26
           </h3>
         </div>
         
@@ -196,10 +221,14 @@ const Academics = () => {
       </div>
 
       <div className="text-center">
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center mx-auto">
+        <a
+          href="/Academic calender 2025-26.pdf"
+          download="Academic_Calendar_2025-26.pdf"
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center mx-auto inline-flex"
+        >
           <Download className="mr-2" size={20} />
           Download Full Calendar (PDF)
-        </button>
+        </a>
       </div>
     </div>
   );
