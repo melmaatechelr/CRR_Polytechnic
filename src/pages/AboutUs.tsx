@@ -108,7 +108,7 @@ The Campus at Vatluru is a place where students from all walks of life are under
  </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
-                    Develop ethical, responsible, and globally competent engineers
+To Develop Compitent  Engineering Professionals Through High Quality Acadamic Instrucions And  Industry  Collaborations  ,with A Focus On Sustainable And Inclusive Technology.
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-600 mr-2">•</span>
