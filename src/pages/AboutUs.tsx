@@ -21,9 +21,16 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold text-gray-800 mb-6">About Our College</h2>
             <div className="prose max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                SIR.C RAMLINGA REDDY POLYTECHNIC, established in 1999, stands as a beacon of technical education 
-                excellence in Andhra Pradesh. Located in the serene town of Vatluru, our institution has been 
-                nurturing young minds and shaping future engineers for over two decades.
+               Sir C Ramalinga Reddy Polytechnic is the first Polytechnic College in private sector in Andhra Pradesh sanctioned and recognized by All India Council for Technical Education (AICTE). This College is permanently affiliated to SBTET Since inception.
+
+Since its inception in 1980, Sir C Ramalinga Reddy Polytechnic has been a premier institute for quality Polytechnic education in Andhra Pradesh under the stewardship of its broad minded and magnanimous management. The last four decades has seen the Institute fulfilling its motto of 'QUALITY SERVICE & VALUE BASED EDUCATION' to the student community.
+
+Adhering to its core values, the institute gives top priority to ethical values and high standards and a commitment to value based education. We believe in working honestly and sincerely, in building trust and in maintaining a long lasting relationship with the Society. Our team comprises of highly qualified and motivated faculty. Core competence and a friendly but efficient work culture play an important role in our overall achievements.
+
+The College is situated near Vatluru Flyover in Eluru, the Head Quarters of West Godavari district. It is surrounded by beautiful paddy fields and is on Chennai-Howrah highway and train route. A large number of buses and trains run via this town. It is easily accessible from any part of the country by rail as well as road.
+
+The College is located in its own sprawling campus with an area of 11.19 acres. Its magnanimous infrastructure and greenery attracts the attention of people who pass by. The vast green campus housing several Departments provides a stimulating environment to the high caliber staff and students of the institution.
+The Campus at Vatluru is a place where students from all walks of life are under a single umbrella pursuing their Diploma course.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
