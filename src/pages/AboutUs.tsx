@@ -271,65 +271,61 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
         return (
           <div className="space-y-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Administrative Office</h2>
-            
-            <div className="grid lg:grid-cols-2 gap-8">
-              <div className="bg-white rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Office Hours</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="font-semibold text-gray-700">Monday - Friday</span>
-                    <span className="text-blue-600">9:00 AM - 5:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                    <span className="font-semibold text-gray-700">Saturday</span>
-                    <span className="text-blue-600">9:00 AM - 1:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="font-semibold text-gray-700">Sunday</span>
-                    <span className="text-red-600">Closed</span>
-                  </div>
-                </div>
-              </div>
+            <p className="text-center text-xl font-semibold text-gray-700 mb-4">SIR C.R.REDDY POLYTECHNIC, ELURU</p>
 
-              <div className="bg-white rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Key Personnel</h3>
-                <div className="space-y-4">
-                  {[
-                    { title: 'Registrar', name: 'Mr. Admin Name', ext: '101' },
-                    { title: 'Academic Officer', name: 'Ms. Academic Name', ext: '102' },
-                    { title: 'Accounts Officer', name: 'Mr. Accounts Name', ext: '103' },
-                    { title: 'Student Affairs', name: 'Ms. Student Name', ext: '104' }
-                  ].map((person, index) => (
-                    <div key={index} className="flex justify-between items-center py-2 border-b border-gray-200 last:border-b-0">
-                      <div>
-                        <p className="font-semibold text-gray-800">{person.name}</p>
-                        <p className="text-sm text-gray-600">{person.title}</p>
-                      </div>
-                      <span className="text-blue-600">Ext: {person.ext}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="mb-8 flex justify-center">
+              <img
+                src="/ADMISTRATIVE.png"
+                alt="Administrative Office"
+                className="rounded-xl shadow-lg max-w-full h-auto"
+              />
             </div>
 
-            <div className="bg-blue-50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Services Available</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                {[
-                  'Student Registration',
-                  'Fee Payment',
-                  'Certificate Verification',
-                  'Transcript Services',
-                  'Admission Counseling',
-                  'Scholarship Information',
-                  'Hostel Admission',
-                  'Library Services',
-                  'Placement Assistance'
-                ].map((service, index) => (
-                  <div key={index} className="bg-white p-4 rounded-lg text-center shadow-sm">
-                    <p className="font-semibold text-gray-800">{service}</p>
-                  </div>
-                ))}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="bg-gradient-to-r from-blue-600 to-blue-700">
+                      <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider">S.No</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider">Name of the Employee</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider">Qualification</th>
+                      <th className="px-6 py-4 text-left text-sm font-bold text-white uppercase tracking-wider">Designation</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200">
+                    {[
+                      { sno: 1, name: 'Sri Ch.Satish Babu', qualification: 'M.TECH', designation: 'PRINCIPAL' },
+                      { sno: 2, name: 'Sri P. Srinivasa Babu', qualification: 'M.A B.Ed', designation: 'Sr.Asst' },
+                      { sno: 3, name: 'Smt A V S Padmaja Rani', qualification: 'M.A public administration', designation: 'Sr.Asst' },
+                      { sno: 4, name: 'Mrs J.Madhuri', qualification: 'B.sc Computers', designation: 'Jr.Asst' },
+                      { sno: 5, name: 'Mrs K.Surya Kumari', qualification: 'B.com', designation: 'Jr.Asst' },
+                      { sno: 6, name: 'Mrs.G.Naga sai madhuri', qualification: 'B.SC Computers', designation: 'Jr.Asst' },
+                      { sno: 7, name: 'Mrs P.Sridevi', qualification: 'B.SC Computers', designation: 'Jr.Asst' },
+                      { sno: 8, name: 'Miss M.Venkata Kumari', qualification: 'B.SC Electronics', designation: 'Jr.Asst' },
+                      { sno: 9, name: 'Mrs K Lakshmi Durga Nagini', qualification: 'B.com', designation: 'Jr.Asst' },
+                      { sno: 10, name: 'Sri M.Krishna', qualification: '10th class', designation: 'Attender' },
+                      { sno: 11, name: 'Sri V.Pullaiah', qualification: '7th class', designation: 'Attender' },
+                      { sno: 12, name: 'Sri A.Murali Krishna', qualification: 'Inter', designation: 'Attender' },
+                      { sno: 13, name: 'Sri P.Srinivasa Rao', qualification: 'Inter', designation: 'Attender' },
+                      { sno: 14, name: 'Sri T.Sudhakar', qualification: '7th class', designation: 'Sweeper' },
+                      { sno: 15, name: 'Sri B.Prem Kumar', qualification: '7th class', designation: 'Sweeper' },
+                      { sno: 16, name: 'Smt S.Samrajjam', qualification: '3rd class', designation: 'Scavenger' },
+                      { sno: 17, name: 'Smt P.Parvathi', qualification: '7th class', designation: 'Scavenger' },
+                      { sno: 18, name: 'Ch.Kumari', qualification: '6th class', designation: 'NMR' },
+                      { sno: 19, name: 'A.Annamma', qualification: '5th class', designation: 'NMR' },
+                      { sno: 20, name: 'V.Venkatesh', qualification: 'Inter', designation: 'NMR' },
+                      { sno: 21, name: 'Ch.Marthamma', qualification: '3rd class', designation: 'NMR' },
+                      { sno: 22, name: 'A.Padmavathi', qualification: '7th class', designation: 'NMR' }
+                    ].map((employee, index) => (
+                      <tr key={index} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{employee.sno}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{employee.name}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{employee.qualification}</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{employee.designation}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
