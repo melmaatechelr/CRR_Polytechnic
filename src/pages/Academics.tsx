@@ -249,70 +249,82 @@ const Academics = () => {
     <div className="space-y-8">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Curriculum Structure</h2>
-        <p className="text-lg text-gray-600">Industry-aligned curriculum designed for practical learning</p>
+        <p className="text-lg text-gray-600">Branch-wise curriculum designed for practical learning and industry readiness</p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <BookOpen className="text-blue-600" size={32} />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">Theory Courses</h3>
-          <ul className="space-y-2 text-gray-700">
-            <li>• Core Engineering Subjects</li>
-            <li>• Mathematics & Sciences</li>
-            <li>• Communication Skills</li>
-            <li>• Environmental Studies</li>
-            <li>• Professional Ethics</li>
-          </ul>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Award className="text-green-600" size={32} />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">Practical Training</h3>
-          <ul className="space-y-2 text-gray-700">
-            <li>• Laboratory Experiments</li>
-            <li>• Workshop Practice</li>
-            <li>• Industrial Training</li>
-            <li>• Project Work</li>
-            <li>• Seminar Presentations</li>
-          </ul>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-6">
-          <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Clock className="text-purple-600" size={32} />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">Assessment</h3>
-          <ul className="space-y-2 text-gray-700">
-            <li>• Continuous Assessment</li>
-            <li>• Mid-Semester Exams</li>
-            <li>• End-Semester Exams</li>
-            <li>• Practical Evaluations</li>
-            <li>• Project Assessment</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="bg-gray-50 rounded-xl p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Semester-wise Structure</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((sem) => (
-            <div key={sem} className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-lg font-bold text-blue-600 mb-3">Semester {sem}</h4>
-              <div className="space-y-2 text-sm text-gray-700">
-                <p><strong>Theory:</strong> 6-7 subjects</p>
-                <p><strong>Practical:</strong> 3-4 labs</p>
-                <p><strong>Credits:</strong> 22-25</p>
-                {sem === 6 && <p><strong>Project:</strong> Major Project</p>}
+      <div className="grid lg:grid-cols-2 gap-6">
+        {courses.map((course, index) => (
+          <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="flex items-start justify-between mb-4">
+              <div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{course.code}</h3>
+                <p className="text-sm text-gray-600">{course.name}</p>
               </div>
-              <button className="mt-4 text-blue-600 hover:text-blue-800 text-sm font-semibold">
-                View Detailed Syllabus
-              </button>
+              <div className="bg-blue-100 p-3 rounded-full">
+                <BookOpen className="text-blue-600" size={24} />
+              </div>
             </div>
-          ))}
+
+            <div className="space-y-3 mb-4">
+              <div className="flex items-center text-sm text-gray-700">
+                <Clock className="mr-2 text-gray-500" size={16} />
+                <span><strong>Duration:</strong> {course.duration}</span>
+              </div>
+              <div className="flex items-center text-sm text-gray-700">
+                <Award className="mr-2 text-gray-500" size={16} />
+                <span><strong>Total Intake:</strong> {course.intake} seats</span>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-4 mb-4">
+              <h4 className="font-semibold text-gray-800 mb-2">Course Structure</h4>
+              <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                <div>• Theory Courses</div>
+                <div>• Practical Labs</div>
+                <div>• Workshop Training</div>
+                <div>• Industrial Training</div>
+                <div>• Project Work</div>
+                <div>• Skill Development</div>
+              </div>
+            </div>
+
+            <a
+              href={course.curriculumUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center w-full"
+            >
+              <FileText className="mr-2" size={18} />
+              View Complete Curriculum
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <div className="bg-blue-50 rounded-xl p-8 mt-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Curriculum Highlights</h3>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-lg p-6 text-center">
+            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <BookOpen className="text-blue-600" size={28} />
+            </div>
+            <h4 className="font-bold text-gray-800 mb-2">Theory & Concepts</h4>
+            <p className="text-sm text-gray-600">Core engineering subjects, mathematics, sciences, and professional skills</p>
+          </div>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Award className="text-green-600" size={28} />
+            </div>
+            <h4 className="font-bold text-gray-800 mb-2">Hands-on Training</h4>
+            <p className="text-sm text-gray-600">Laboratory work, workshops, industrial training, and project work</p>
+          </div>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Clock className="text-orange-600" size={28} />
+            </div>
+            <h4 className="font-bold text-gray-800 mb-2">Assessment Methods</h4>
+            <p className="text-sm text-gray-600">Continuous evaluation, unit tests, and semester examinations</p>
+          </div>
         </div>
       </div>
     </div>
