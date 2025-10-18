@@ -153,7 +153,15 @@ To Provide The Students With Knowledge,skills ,values And Sensitivity To Face Th
         return (
           <div className="space-y-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Management Team</h2>
-            
+
+            <div className="mb-8 flex justify-center">
+              <img
+                src="/image.png"
+                alt="Management Team"
+                className="rounded-xl shadow-lg max-w-full h-auto"
+              />
+            </div>
+
             <div className="grid lg:grid-cols-3 gap-8">
               {[
                 {
