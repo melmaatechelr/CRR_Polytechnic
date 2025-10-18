@@ -239,7 +239,7 @@ const Academics = () => {
           className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center mx-auto inline-flex"
         >
           <Download className="mr-2" size={20} />
-          Download Full Calendar (PDF)
+          Download Full Academic Calendar(PDF)
         </a>
       </div>
     </div>
