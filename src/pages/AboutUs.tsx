@@ -83,11 +83,23 @@ The Campus at Vatluru is a place where students from all walks of life are under
                   </div>
                   <h3 className="text-2xl font-bold text-blue-800">Our Vision</h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed text-lg">
-        Sir Cr Reddy Polytechnic Shall Be The Leading Institution Of Higher Professionals, Lecturer’s And Technical  Education.
-       To Achieve  And  Maintain  The  Status  Of  Internationally  Reputed  Institue  Of  Excellence  In Technical Education.
-       A  Common Thread In Vision Is Desired To Produce Graduatdes Who Can Contribute To The Betterment Of Society,industry And Nation.
-                </p>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    To  Inculcate  Entrepreneurship  Skills & Leadership  Qualities  In  The  Learners  Through A Culture Of Innovation And Excellence. 
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+                    To Ensure  A Viable Acadamic Ambience Conductive Intellectual  Growth And Skill  Acquisition 
+ </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+To Develop Compitent  Engineering Professionals Through High Quality Acadamic Instrucions And  Industry  Collaborations  ,with A Focus On Sustainable And Inclusive Technology.
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-600 mr-2">•</span>
+To Provide The Students With Knowledge,skills ,values And Sensitivity To Face The Challenges In Both Acadimic And Personal Life.                  </li>
+                </ul>
               </div>
 
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl">
