@@ -40,8 +40,31 @@ const Facilities = () => {
       icon: BookOpen,
       color: 'from-purple-500 to-purple-600',
       headerDescription: 'Comprehensive library with vast collection of books, journals, and digital resources',
-      description: 'Comprehensive library with vast collection of books, journals, and digital resources',
-      image: '/api/placeholder/400/300'
+      description: `The library in a polytechnic college is a vital resource center that supports the academic and research needs of students and faculty. It provides access to a wide range of learning materials and information resources. Previous semester papers are available in library.
+
+TEXT BOOKS: TOTAL NUMBER OF VOLUMES: 19,677
+TOTAL NO. OF TITLES: 5911
+
+REFERENCE BOOKS: REFERENCE BOOKS: 5025
+BACK VOLUMES: 180
+PROJECTS REPORTS: 491
+SC/ST BOOKBANK: 893
+
+PERIODICALS: JOURNALS & MAGAZINES: 26
+
+BOOKS ISSUES & RETURNS
+
+STAFF & STUDENTS
+
+BRANCH    ISSUES    RETURNS
+CIVIL     121       93
+CME       118       94
+AIML      56        30
+CCN       4         1
+ECE       130       119
+EEE       120       107
+MECHANICAL 113      97`,
+      image: '/FACILITIES/LIBRARY.png'
     },
     {
       id: 'hostels',
