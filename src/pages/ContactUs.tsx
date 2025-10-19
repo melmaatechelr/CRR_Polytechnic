@@ -36,7 +36,7 @@ const ContactUs = () => {
       icon: MapPin,
       title: 'Address',
       details: [
-        'SIR.C RAMLINGA REDDY POLYTECHNIC',
+        'SIR C R REDDY POLYTECHNIC',
         'Vatluru, 534007',
         'Andhra Pradesh, India'
       ],
