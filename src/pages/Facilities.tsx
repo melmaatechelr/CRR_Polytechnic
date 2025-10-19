@@ -98,7 +98,7 @@ MECHANICAL 113      97`,
       name: 'Parking',
       icon: Presentation,
       color: 'from-red-500 to-red-600',
-      headerDescription: 'Air-conditioned seminar hall for conferences, workshops, and special events',
+      headerDescription: 'A well-organized parking facility is essential in any educational institution',
       description: 'Air-conditioned seminar hall for conferences, workshops, and special events',
       image: '/FACILITIES/ACSEMINARHALL.png'
     },
