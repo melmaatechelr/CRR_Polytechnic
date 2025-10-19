@@ -93,6 +93,15 @@ MECHANICAL 113      97`,
       description: 'Extensive outdoor sports facilities for various games and athletics',
       image: '/FACILITIES/SPORTS&GAMES.png'
     },
+     {
+      id: 'parking',
+      name: 'Parking',
+      icon: Presentation,
+      color: 'from-red-500 to-red-600',
+      headerDescription: 'Air-conditioned seminar hall for conferences, workshops, and special events',
+      description: 'Air-conditioned seminar hall for conferences, workshops, and special events',
+      image: '/FACILITIES/ACSEMINARHALL.png'
+    },
     {
       id: 'auditorium',
       name: 'Open Auditorium',
