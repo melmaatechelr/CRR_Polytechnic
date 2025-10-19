@@ -85,22 +85,13 @@ MECHANICAL 113      97`,
       image: '/FACILITIES/ACSEMINARHALL.png'
     },
     {
-      id: 'indoor-games',
-      name: 'Indoor Games',
-      icon: Gamepad2,
-      color: 'from-teal-500 to-teal-600',
-      headerDescription: 'Indoor sports facilities for recreation and competitive games',
-      description: 'Indoor sports facilities for recreation and competitive games',
-      image: '/api/placeholder/400/300'
-    },
-    {
       id: 'outdoor-sports',
-      name: 'Outdoor Sports & Games',
+      name: 'Sports & Games',
       icon: Trophy,
       color: 'from-green-500 to-green-600',
       headerDescription: 'Extensive outdoor sports facilities for various games and athletics',
       description: 'Extensive outdoor sports facilities for various games and athletics',
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/SPORTS&GAMES.png'
     },
     {
       id: 'auditorium',
