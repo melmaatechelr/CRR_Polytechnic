@@ -85,7 +85,7 @@ const ContactUs = () => {
     {
       name: ' CH.SATISH BABU, M.TECH',
       designation: 'Principal',
-      phone: '+91-XXXX-XXXXXX',
+      phone: '+91-9912342028',
       email: ' principal.crrpoly@gmail.com'
     },
     {
