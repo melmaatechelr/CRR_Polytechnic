@@ -47,8 +47,8 @@ const ContactUs = () => {
       icon: Phone,
       title: 'Phone Numbers',
       details: [
-        'Main Office: 9959112939',
-        'Admissions: +91-XXXX-XXXXXX'
+        'Main Office:+91-9959112939',
+        'Admissions: +91-9912342028'
       ],
       color: 'from-green-500 to-green-600'
     },
