@@ -48,7 +48,7 @@ const Navigation = ({ currentPage, onPageChange }) => {
       submenu: [
         'About TNP',
         'Campus Placements',
-        'Industry Interaction',
+        'Guidelines & Document for Placement Cell',
         'Recruiters',
         'MOUs'
       ]
