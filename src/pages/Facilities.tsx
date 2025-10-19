@@ -127,7 +127,7 @@ MECHANICAL 113      97`,
       color: 'from-cyan-500 to-cyan-600',
       headerDescription: 'On-campus mineral water plant ensuring pure drinking water supply',
       description: 'On-campus mineral water plant ensuring pure drinking water supply',
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/MINERALWATERPLANT.png'
     },
     {
       id: 'solar-power',
