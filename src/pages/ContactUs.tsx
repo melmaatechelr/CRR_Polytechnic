@@ -303,7 +303,9 @@ const ContactUs = () => {
               <div className="text-center p-4 sm:p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg sm:rounded-xl">
                 <MapPin className="text-blue-600 mx-auto mb-2 sm:mb-3" size={window.innerWidth < 640 ? 24 : 32} />
                 <h4 className="font-bold text-gray-800 mb-2 text-sm sm:text-base">Address</h4>
-                <p className="text-gray-600 text-xs sm:text-sm">Vatluru, 534007<br />Andhra Pradesh, India</p>
+                <p className="text-gray-600 text-xs sm:text-sm">NEAR VATLURU FLYOVER
+
+VATLURU, ELURU, 534007<br />Andhra Pradesh, India</p>
               </div>
               <div className="text-center p-4 sm:p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-lg sm:rounded-xl">
                 <Phone className="text-green-600 mx-auto mb-2 sm:mb-3" size={window.innerWidth < 640 ? 24 : 32} />
