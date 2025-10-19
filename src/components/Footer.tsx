@@ -230,20 +230,6 @@ const Footer = () => {
                 </p>
               </div>
 
-              {/* Developed By - Enhanced */}
-              <div className="flex items-center space-x-5 text-xl">
-                <span className="text-slate-400 font-medium">Developed with</span>
-                <Heart size={24} className="text-red-500 animate-pulse" />
-                <span className="text-slate-400 font-medium">by</span>
-                <div className="flex items-center space-x-4 bg-gradient-to-r from-blue-600/40 to-cyan-600/40 px-8 py-4 rounded-3xl border border-white/30 backdrop-blur-sm hover:from-blue-600/50 hover:to-cyan-600/50 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                  <img 
-                    src="/Melmaatech Logo Final.PNG" 
-                    alt="Melmaa Tech Logo" 
-                    className="w-10 h-10 rounded-full object-contain bg-white/30 p-1"
-                  />
-                  <span className="text-white font-bold text-2xl tracking-wide">Melmaa Tech</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
