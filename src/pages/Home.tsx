@@ -67,42 +67,42 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Enhanced Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-cyan-600/30"></div>
-        
+
         {/* Animated background elements */}
-        <div className="absolute top-20 left-10 w-80 h-80 bg-blue-400/15 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-400/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-40 h-40 sm:w-80 sm:h-80 bg-blue-400/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-48 h-48 sm:w-96 sm:h-96 bg-cyan-400/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             {/* Premier Badge */}
-            <div className="inline-flex items-center bg-gradient-to-r from-amber-400 to-orange-500 text-gray-900 px-8 py-3 rounded-full font-bold text-base mb-8 shadow-xl border border-amber-300/50">
-              <Star className="mr-2" size={16} />
-              Premier Private Polytechnic in Andhra Pradesh
+            <div className="inline-flex items-center bg-gradient-to-r from-amber-400 to-orange-500 text-gray-900 px-4 py-2 sm:px-6 sm:py-2.5 md:px-8 md:py-3 rounded-full font-bold text-xs sm:text-sm md:text-base mb-6 sm:mb-8 shadow-xl border border-amber-300/50">
+              <Star className="mr-1.5 sm:mr-2 w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="truncate">Premier Private Polytechnic in AP</span>
             </div>
-            
-            <h1 className="text-6xl lg:text-8xl font-bold mb-10 leading-tight tracking-wide">
+
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold mb-6 sm:mb-8 md:mb-10 leading-tight tracking-wide">
               Shaping Tomorrow's
               <span className="bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent"> Engineers</span>
             </h1>
-            
+
             {/* Enhanced tagline */}
-            <div className="bg-white/15 backdrop-blur-md rounded-3xl p-8 mb-10 border border-white/30 shadow-2xl">
-              <p className="text-xl lg:text-2xl text-slate-100 leading-relaxed font-medium">
-                A premier private polytechnic in Andhra Pradesh with a <span className="text-amber-300 font-bold">legacy of 40 years</span>, 
-                featuring state-of-the-art laboratories, expansive infrastructure, and a team of 
+            <div className="bg-white/15 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-10 border border-white/30 shadow-2xl">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-100 leading-relaxed font-medium">
+                A premier private polytechnic in Andhra Pradesh with a <span className="text-amber-300 font-bold">legacy of 40 years</span>,
+                featuring state-of-the-art laboratories, expansive infrastructure, and a team of
                 <span className="text-blue-300 font-bold"> highly qualified and experienced faculty</span>.
               </p>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-8 justify-center">
-              <button className="group bg-gradient-to-r from-white to-slate-50 text-blue-900 px-12 py-5 rounded-2xl font-bold hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex items-center justify-center text-lg border border-white/20">
-                Apply Now 
-                <ChevronRight className="ml-3 group-hover:translate-x-2 transition-transform" size={22} />
+
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center">
+              <button className="group bg-gradient-to-r from-white to-slate-50 text-blue-900 px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-5 rounded-xl sm:rounded-2xl font-bold hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex items-center justify-center text-sm sm:text-base md:text-lg border border-white/20">
+                Apply Now
+                <ChevronRight className="ml-2 sm:ml-3 group-hover:translate-x-2 transition-transform w-5 h-5 sm:w-6 sm:h-6" />
               </button>
-              <button className="group border-2 border-white/60 text-white px-12 py-5 rounded-2xl font-bold hover:bg-white hover:text-blue-900 transition-all duration-300 backdrop-blur-sm text-lg hover:shadow-2xl transform hover:-translate-y-2">
+              <button className="group border-2 border-white/60 text-white px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-5 rounded-xl sm:rounded-2xl font-bold hover:bg-white hover:text-blue-900 transition-all duration-300 backdrop-blur-sm text-sm sm:text-base md:text-lg hover:shadow-2xl transform hover:-translate-y-2">
                 Virtual Campus Tour
               </button>
             </div>
@@ -111,16 +111,16 @@ const Home = () => {
       </section>
 
       {/* Enhanced Stats Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
             {stats.map((stat, index) => (
-              <div key={index} className="group text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className={`bg-gradient-to-br ${stat.color} w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300 shadow-xl`}>
-                  <stat.icon className="text-white" size={40} />
+              <div key={index} className="group text-center p-4 sm:p-5 md:p-6 bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className={`bg-gradient-to-br ${stat.color} w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto mb-3 sm:mb-4 md:mb-6 group-hover:scale-110 transition-all duration-300 shadow-xl`}>
+                  <stat.icon className="text-white" size={window.innerWidth < 640 ? 28 : window.innerWidth < 768 ? 32 : 40} />
                 </div>
-                <h3 className="text-5xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">{stat.value}</h3>
-                <p className="text-gray-600 font-semibold text-lg">{stat.label}</p>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 sm:mb-3 md:mb-4 group-hover:text-blue-700 transition-colors">{stat.value}</h3>
+                <p className="text-gray-600 font-semibold text-xs sm:text-sm md:text-base lg:text-lg">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -128,27 +128,27 @@ const Home = () => {
       </section>
 
       {/* Enhanced Highlights Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-800 mb-8 tracking-wide">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 md:mb-8 tracking-wide">
               Why Choose CRR Polytechnic?
             </h2>
-            <div className="w-32 h-2 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-8 rounded-full"></div>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
-              We provide world-class technical education with industry-relevant curriculum, 
+            <div className="w-20 sm:w-24 md:w-32 h-1.5 sm:h-2 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto mb-4 sm:mb-6 md:mb-8 rounded-full"></div>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium px-4">
+              We provide world-class technical education with industry-relevant curriculum,
               modern facilities, and a commitment to excellence that spans four decades
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
             {highlights.map((highlight, index) => (
-              <div key={index} className="group bg-white p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border border-gray-100 hover:border-blue-200">
-                <div className={`bg-gradient-to-br ${highlight.gradient} w-20 h-20 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                  <highlight.icon className="text-white" size={32} />
+              <div key={index} className="group bg-white p-6 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border border-gray-100 hover:border-blue-200">
+                <div className={`bg-gradient-to-br ${highlight.gradient} w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 md:mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                  <highlight.icon className="text-white" size={window.innerWidth < 640 ? 24 : 32} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-700 transition-colors">{highlight.title}</h3>
-                <p className="text-gray-600 leading-relaxed font-medium">{highlight.description}</p>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 group-hover:text-blue-700 transition-colors">{highlight.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-medium">{highlight.description}</p>
               </div>
             ))}
           </div>
