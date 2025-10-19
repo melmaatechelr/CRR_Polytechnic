@@ -34,8 +34,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: '#', color: 'hover:text-blue-600', bg: 'hover:bg-blue-50' },
-    { icon: Twitter, href: '#', color: 'hover:text-sky-500', bg: 'hover:bg-sky-50' },
-    { icon: Instagram, href: '#', color: 'hover:text-pink-600', bg: 'hover:bg-pink-50' },
+    { icon: Instagram, href: 'https://www.instagram.com/sircrreddypolytechnic?igsh=MXZtYXBmaHB1eDRxMg==', color: 'hover:text-pink-600', bg: 'hover:bg-pink-50' },
     { icon: Linkedin, href: '#', color: 'hover:text-blue-700', bg: 'hover:bg-blue-50' },
     { icon: Youtube, href: '#', color: 'hover:text-red-600', bg: 'hover:bg-red-50' }
   ];
