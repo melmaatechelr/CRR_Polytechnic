@@ -222,67 +222,148 @@ const Placements = () => {
     </div>
   );
 
-  const renderInteraction = () => (
+  const renderGuidelines = () => (
     <div className="space-y-8">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Industry-Institute Interaction</h2>
-        <p className="text-lg text-gray-600">Building strong partnerships with industry leaders</p>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Guidelines & Document for Placement Cell</h2>
+        <p className="text-lg text-gray-600">Important guidelines and policies for campus placements</p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8">
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">Industry Visits</h3>
-          <div className="space-y-4">
-            {[
-              { company: 'Manufacturing Plant Visit', date: 'March 2024', students: '45 students' },
-              { company: 'IT Company Tour', date: 'February 2024', students: '60 students' },
-              { company: 'Construction Site Visit', date: 'January 2024', students: '30 students' }
-            ].map((visit, index) => (
-              <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800">{visit.company}</h4>
-                <div className="flex justify-between text-sm text-gray-600 mt-2">
-                  <span>{visit.date}</span>
-                  <span>{visit.students}</span>
+      <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-blue-100">
+        <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-cyan-600 p-6">
+          <div className="flex items-center space-x-3">
+            <div className="bg-white/20 p-3 rounded-lg backdrop-blur-sm">
+              <Building className="text-white" size={32} />
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-white">Guidelines for Placement</h3>
+              <p className="text-blue-100 text-sm">Please read carefully</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="p-8">
+          <div className="space-y-6">
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border-l-4 border-blue-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">1</span>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">Guest Lectures</h3>
-          <div className="space-y-4">
-            {[
-              { topic: 'Emerging Technologies in Engineering', speaker: 'Industry Expert', date: 'March 2024' },
-              { topic: 'Career Opportunities in IT', speaker: 'HR Manager, TCS', date: 'February 2024' },
-              { topic: 'Entrepreneurship in Engineering', speaker: 'Startup Founder', date: 'January 2024' }
-            ].map((lecture, index) => (
-              <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-gray-800">{lecture.topic}</h4>
-                <p className="text-sm text-gray-600 mt-1">By: {lecture.speaker}</p>
-                <p className="text-sm text-gray-500">{lecture.date}</p>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  The role of T&P (Training & Placement) Cell is a facilitator for placement related activities. <span className="font-semibold text-gray-900">T&P does not guarantee a job.</span>
+                </p>
               </div>
-            ))}
+            </div>
+
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-cyan-50 to-teal-50 rounded-xl border-l-4 border-cyan-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">2</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  Students will be informed about any campus drive through emails & their HODs will also be marked.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-teal-50 to-green-50 rounded-xl border-l-4 border-teal-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">3</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  The Placement facility is available to all the students registered with T&P Cell through the policy <span className="font-semibold text-gray-900">ONE JOB TO ONE STUDENT AT THE FIRST INSTANCE</span>. The students are required to submit a certificate showing their academic performance.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border-l-4 border-green-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">4</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  Participants should always carry <span className="font-semibold text-gray-900">2 copies of resumes</span> during interviews.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border-l-4 border-amber-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">5</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  Any negative remark in this regard made by any faculty or warden against any student will make him/her <span className="font-semibold text-red-700">ineligible for the entire campus placement process</span>.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl border-l-4 border-red-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">6</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  Besides, any student against whom <span className="font-semibold text-red-700">more than one warning letter is issued will not be allowed to appear in campus interview</span>.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl border-l-4 border-purple-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">7</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  Selected participants need to submit a copy of their <span className="font-semibold text-gray-900">offer letter to Placement department to obtain NOC</span> for joining.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 p-5 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border-l-4 border-blue-600 hover:shadow-md transition-all duration-300">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">8</span>
+                </div>
+              </div>
+              <div>
+                <p className="text-gray-700 leading-relaxed">
+                  All students must be with <span className="font-semibold text-gray-900">uniform and identity card</span> while going to TNP training.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-blue-50 rounded-xl p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Interaction Programs</h3>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { title: 'Industry Mentorship', desc: 'One-on-one guidance from industry professionals' },
-            { title: 'Live Projects', desc: 'Real-world projects from partner companies' },
-            { title: 'Skill Development', desc: 'Industry-specific training programs' },
-            { title: 'Internship Programs', desc: 'Structured internship opportunities' },
-            { title: 'Research Collaboration', desc: 'Joint research initiatives with industry' },
-            { title: 'Technology Transfer', desc: 'Knowledge sharing and technology adoption' }
-          ].map((program, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="font-semibold text-gray-800 mb-2">{program.title}</h4>
-              <p className="text-sm text-gray-600">{program.desc}</p>
+      <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 rounded-2xl p-8 border-2 border-amber-200 shadow-lg">
+        <div className="flex items-start space-x-4">
+          <div className="flex-shrink-0">
+            <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center shadow-md">
+              <Award className="text-white" size={24} />
             </div>
-          ))}
+          </div>
+          <div>
+            <h4 className="text-xl font-bold text-gray-800 mb-2">Important Note</h4>
+            <p className="text-gray-700 leading-relaxed">
+              Students are advised to maintain professional conduct throughout the placement process. Any violation of the above guidelines may result in disciplinary action. For any queries, please contact the Training & Placement Cell.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -505,9 +586,9 @@ const Placements = () => {
   const tabs = [
     { id: 'about', label: 'About TNP', icon: Briefcase },
     { id: 'placements', label: 'Campus Placements', icon: Users },
-    { id: 'interaction', label: 'Industry Interaction', icon: Building },
     { id: 'recruiters', label: 'List of Recruiters', icon: Award },
-    { id: 'mous', label: 'MOUs', icon: Handshake }
+    { id: 'mous', label: 'MOUs', icon: Handshake },
+    { id: 'guidelines', label: 'Guidelines & Document', icon: Building }
   ];
 
   return (
@@ -537,9 +618,9 @@ const Placements = () => {
         <div>
           {activeTab === 'about' && renderAbout()}
           {activeTab === 'placements' && renderPlacements()}
-          {activeTab === 'interaction' && renderInteraction()}
           {activeTab === 'recruiters' && renderRecruiters()}
           {activeTab === 'mous' && renderMOUs()}
+          {activeTab === 'guidelines' && renderGuidelines()}
         </div>
       </div>
     </div>
