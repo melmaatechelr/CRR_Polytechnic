@@ -82,7 +82,7 @@ MECHANICAL 113      97`,
       color: 'from-red-500 to-red-600',
       headerDescription: 'Air-conditioned seminar hall for conferences, workshops, and special events',
       description: 'Air-conditioned seminar hall for conferences, workshops, and special events',
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/ACSEMINARHALL.png'
     },
     {
       id: 'indoor-games',
