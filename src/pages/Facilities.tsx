@@ -31,8 +31,8 @@ const Facilities = () => {
       icon: FlaskConical,
       color: 'from-green-500 to-green-600',
       headerDescription: 'State-of-the-art laboratories with modern equipment for practical learning',
-      description: 'State-of-the-art laboratories with modern equipment for practical learning',
-      image: '/api/placeholder/400/300'
+      description: 'Laboratories in a diploma college play a vital role in providing practical knowledge along with theoretical learning. They are well-equipped with modern instruments, tools, machinery as per the requirements of different branches like Electronics, Electrical, Mechanical, Civil, and Computer Science. Each laboratory is designed to give students hands-on experience and to develop technical skills needed in real-time industry applications. Practical sessions conducted in laboratories help students to understand concepts clearly, improve problem-solving ability, and strengthen their innovative thinking. Computer laboratory provide access to the latest software and internet facilities, while workshops and Mechanical labs help student practice machining, fitting, welding, and other industrial activities. Electronics and Electrical labs allow experimentation with circuits, machines and measurements. Civil labs support surveying, material testing, and construction practice. By working in laboratories, students not only gain confidence in their subject knowledge but also learn the importance of safety, teamwork, and discipline. These laboratories ensure that diploma graduates are industry-ready with practical exposure and professional competence.',
+      image: '/FACILITIES/LECTUREHALLS.png'
     },
     {
       id: 'library',
