@@ -107,7 +107,7 @@ Parking Area Infrastructure
 3.Covered parking to protect vehicles from weather
 4.Proper surfacing to avoid dust and mud
 ',
-      image: '/FACILITIES/ACSEMINARHALL.png'
+      image: '/FACILITIES/PARKING FACILITY.png'
     },
     {
       id: 'auditorium',
