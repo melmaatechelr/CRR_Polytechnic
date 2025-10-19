@@ -109,7 +109,7 @@ MECHANICAL 113      97`,
       color: 'from-yellow-500 to-yellow-600',
       headerDescription: 'Hygienic canteen serving fresh and nutritious food at affordable prices',
       description: 'Hygienic canteen serving fresh and nutritious food at affordable prices',
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/CANTEEN.png'
     },
     {
       id: 'bank',
