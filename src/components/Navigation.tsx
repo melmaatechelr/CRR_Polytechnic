@@ -153,15 +153,6 @@ const Navigation = ({ currentPage, onPageChange }) => {
             ))}
           </div>
 
-          {/* Quick Actions Button (Desktop) */}
-          <div className="hidden lg:flex items-center">
-            <button
-              onClick={() => handleMenuClick('contact')}
-              className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-xl font-bold hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm"
-            >
-              Apply Now
-            </button>
-          </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center justify-between w-full py-4">
