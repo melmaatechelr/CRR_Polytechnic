@@ -384,48 +384,48 @@ const Placements = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <img src="/crr logo.jpg" alt="Isuzu Motors" className="max-w-full max-h-full object-contain" />
+                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mb-4 p-4">
+                  <img src="/RECRUITERS/isuzu.png" alt="Isuzu Motors" className="max-w-full max-h-full object-contain" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-center">Isuzu Motors Ltd.</h4>
               </div>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
+                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mb-4 p-4">
+                  <img src="/RECRUITERS/larsen&toubro.png" alt="Larsen & Toubro" className="max-w-full max-h-full object-contain" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-center">Larsen & Toubro</h4>
               </div>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
+                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mb-4 p-4">
+                  <img src="/RECRUITERS/efftronics.png" alt="Efftronics Systems" className="max-w-full max-h-full object-contain" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-center">Efftronics Systems Pvt Ltd</h4>
               </div>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
+                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mb-4 p-4">
+                  <img src="/RECRUITERS/nexgen.png" alt="Deepak Nexgen" className="max-w-full max-h-full object-contain" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-center">Deepak Nexgen Foods And Feeds Private Limited</h4>
               </div>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <Building className="text-blue-600" size={48} />
+                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mb-4 p-4">
+                  <img src="/RECRUITERS/vem.png" alt="VEM Technologies" className="max-w-full max-h-full object-contain" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-center">VEM Technologies Pvt. Ltd.</h4>
               </div>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-200 hover:border-blue-500 transition-all hover:shadow-md">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center mb-4 p-2">
-                  <img src="/Melmaatech Logo Final.PNG" alt="MelmaaTech" className="max-w-full max-h-full object-contain" />
+                <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center mb-4 p-4">
+                  <img src="/RECRUITERS/Melmaatech.PNG" alt="MelmaaTech" className="max-w-full max-h-full object-contain" />
                 </div>
                 <h4 className="font-semibold text-gray-800 text-center">MelmaaTech</h4>
               </div>
