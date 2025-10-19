@@ -56,9 +56,7 @@ const ContactUs = () => {
       icon: Mail,
       title: 'Email Addresses',
       details: [
-        'info@crrpolytechnic.edu.in',
-        'principal@crrpolytechnic.edu.in',
-        'admissions@crrpolytechnic.edu.in'
+        ' principal.crrpoly@gmail.com'
       ],
       color: 'from-purple-500 to-purple-600'
     },
