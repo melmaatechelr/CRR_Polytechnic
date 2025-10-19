@@ -416,23 +416,7 @@ const Facilities = () => {
           </div>
         </div>
 
-        {/* Contact for Facility Tours */}
-        <div className="mt-12 md:mt-16 bg-white rounded-2xl shadow-xl p-6 sm:p-8 md:p-12 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Visit Our Campus
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed">
-            Experience our world-class facilities firsthand. Schedule a campus tour today!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-8 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 font-semibold text-sm sm:text-base shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Schedule Campus Tour
-            </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 rounded-lg hover:bg-blue-50 transition-all duration-300 font-semibold text-sm sm:text-base">
-              Download Brochure
-            </button>
-          </div>
-        </div>
+       
       </div>
     </div>
   );
