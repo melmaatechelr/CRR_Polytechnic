@@ -73,7 +73,7 @@ MECHANICAL 113      97`,
       color: 'from-orange-500 to-orange-600',
       headerDescription: 'Comfortable accommodation facilities for outstation students',
       description: 'Comfortable accommodation facilities for outstation students',
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/INFACILITIESHOSTEL.png'
     },
     {
       id: 'seminar-hall',
