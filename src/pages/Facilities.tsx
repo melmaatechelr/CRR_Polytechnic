@@ -136,7 +136,7 @@ MECHANICAL 113      97`,
       color: 'from-amber-500 to-amber-600',
       headerDescription: 'Renewable energy initiative with solar power generation for campus needs',
       description: 'Renewable energy initiative with solar power generation for campus needs',
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/SOLARPOWERPLANTINCOLLEGEHOSTEL.png'
     }
   ];
 
