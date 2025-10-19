@@ -48,9 +48,9 @@ const Navigation = ({ currentPage, onPageChange }) => {
       submenu: [
         'About TNP',
         'Campus Placements',
-        'Guidelines & Document for Placement Cell',
         'Recruiters',
-        'MOUs'
+        'MOUs',
+          'Guidelines & Document for Placement Cell'
       ]
     },
     {
