@@ -42,7 +42,7 @@ const Facilities = () => {
       icon: BookOpen,
       color: 'from-purple-500 to-purple-600',
       headerDescription: 'Comprehensive library with vast collection of books, journals, and digital resources',
-      description: `The library in a polytechnic college is a vital resource center that supports the academic and research needs of students and faculty. It provides access to a wide range of learning materials and information resources. Previous semester papers are available in library.
+      description: `The library in a polytechnic college is a vital resource center that supports the academic and research needs of students and faculty. It provides access to a wide range of learning materials and information resources. Previous semester papers are available in library.<br>
 
 TEXT BOOKS: TOTAL NUMBER OF VOLUMES: 19,677
 TOTAL NO. OF TITLES: 5911
