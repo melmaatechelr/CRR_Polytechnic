@@ -181,142 +181,181 @@ const Examinations = () => {
         </div>
       </div>
 
-      {/* Examination Regulations Accordion Section */}
-      <div className="bg-white rounded-xl shadow-lg p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6">
-          Examination Regulations
-        </h3>
-        <div className="space-y-4">
-          <AccordionItem index={1} title="1.1 Eligibility (Attendance to Appear for the End Examination)">
-            <ul className="list-disc pl-6 space-y-2 text-sm">
-              <li>
-                A candidate shall be permitted to appear for the end examination
-                if he or she has attended a minimum of 75% of working days.
-              </li>
-              <li>
-                Condonation up to 10% (65%-75%) attendance may be granted on
-                medical grounds with fee.
-              </li>
-              <li>Candidates below 65% attendance shall be detained.</li>
-              <li>
-                Students not paying condonation fee are not eligible for exams
-                and must seek re-admission.
-              </li>
-              <li>Examination fee: ₹550</li>
-            </ul>
-            <h4 className="font-semibold mt-4">Industrial Training:</h4>
-            <ul className="list-disc pl-6 text-sm space-y-1">
-              <li>Minimum 90% attendance required during Industrial Training.</li>
-              <li>
-                If below 90%, student must repeat 6 months of training at own
-                expense.
-              </li>
-            </ul>
-          </AccordionItem>
+   <!-- Examination Regulations Section -->
+<section class="p-8 bg-gray-50">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-blue-500 inline-block">
+    Examination Regulations
+  </h2>
 
-          <AccordionItem index={2} title="1.2 Readmission">
-            <ul className="list-disc pl-6 text-sm space-y-2">
-              <li>
-                Granted by Principal/Regional Joint Director within 15 days of
-                class commencement (except Industrial Training).
-              </li>
-              <li>
-                For Industrial Training, readmission before training
-                commencement.
-              </li>
-              <li>
-                Within 30 days after class commencement for other courses;
-                otherwise next year.
-              </li>
-              <li>
-                Attendance counted from the official start date of regular class
-                work.
-              </li>
-            </ul>
-          </AccordionItem>
+  <!-- Part A: Theory Courses -->
+  <div class="mt-6">
+    <h3 class="text-xl font-semibold text-gray-800 mb-4">Part A: Theory Courses</h3>
 
-          <AccordionItem index={3} title="1.3 Scheme of Evaluation">
-            <div className="overflow-x-auto">
-              <table className="min-w-full text-sm border border-gray-200">
-                <thead className="bg-gray-100">
-                  <tr>
-                    <th className="p-2 border">Course Type</th>
-                    <th className="p-2 border">End Exam</th>
-                    <th className="p-2 border">Internal Marks</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="p-2 border">Theory (I Year)</td>
-                    <td className="p-2 border">80 marks / 3 hrs</td>
-                    <td className="p-2 border">20 marks</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 border">Practical (I Year)</td>
-                    <td className="p-2 border">60/30 marks / 3 hrs</td>
-                    <td className="p-2 border">40/20 marks</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 border">Theory (III–VII Sem)</td>
-                    <td className="p-2 border">80 marks / 3 hrs</td>
-                    <td className="p-2 border">20 marks</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 border">Practical (III–VII Sem)</td>
-                    <td className="p-2 border">60/30 marks / 3 hrs</td>
-                    <td className="p-2 border">40/20 marks</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </AccordionItem>
+    <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+      <li>Each theory course shall be evaluated for 100 marks in total.</li>
+      <li>Internal Assessment (Sessional Marks) shall carry <strong>40 marks</strong> and the End Examination shall carry <strong>60 marks</strong>.</li>
+      <li>Internal Assessment shall consist of:
+        <ul class="list-decimal list-inside ml-6 space-y-1">
+          <li>Two Unit Tests — each for 20 marks.</li>
+          <li>Average of both tests will be taken as internal marks for each course.</li>
+        </ul>
+      </li>
+      <li>The duration of each unit test shall be <strong>90 minutes</strong>.</li>
+      <li>The question paper pattern for unit tests shall be as per the Board Examination format.</li>
+      <li>The student should secure at least <strong>35% marks</strong> in the End Examination and overall <strong>40% marks</strong> including internal marks to pass a course.</li>
+      <li>All answer scripts and records related to internal evaluation shall be preserved for inspection by competent authorities.</li>
+    </ul>
+  </div>
 
-          <AccordionItem index={4} title="1.4 Internal Assessment Scheme">
-            <p className="text-sm">
-              Internal assessment consists of mid exams, assignments, and
-              dynamic learning activities.
-            </p>
-            <div className="overflow-x-auto mt-4">
-              <table className="min-w-full text-sm border border-gray-200">
-                <thead className="bg-gray-100">
-                  <tr>
-                    <th className="p-2 border">Type of Assessment</th>
-                    <th className="p-2 border">Weightage</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="p-2 border">
-                      Mid Examinations (Mid-1, Mid-2, Mid-3)
-                    </td>
-                    <td className="p-2 border">40</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 border">Assignments</td>
-                    <td className="p-2 border">5</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2 border">
-                      Dynamic Learning Activities (Projects, Seminars, Quizzes,
-                      etc.)
-                    </td>
-                    <td className="p-2 border">5</td>
-                  </tr>
-                  <tr className="font-semibold bg-gray-50">
-                    <td className="p-2 border">Total</td>
-                    <td className="p-2 border">50</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="text-sm mt-4">
-              Internal marks are scaled down to 20. Practical courses include
-              continuous assessment, and drawing/lab evaluations follow SBTET
-              norms.
-            </p>
-          </AccordionItem>
-        </div>
+  <!-- Divider -->
+  <div class="my-8 border-t border-gray-300"></div>
+
+  <!-- Part B: Practical Courses -->
+  <div>
+    <h3 class="text-xl font-semibold text-gray-800 mb-4">Part B: Practical Courses</h3>
+
+    <!-- Drawing Courses -->
+    <div class="mb-10">
+      <h4 class="text-lg font-semibold text-gray-700 mb-2">(i) Drawing Courses</h4>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The award of Sessional marks for internal assessment shall be as given in the following table:
+      </p>
+
+      <!-- Table for Drawing Courses -->
+      <div class="overflow-x-auto mb-4">
+        <table class="min-w-full border border-gray-300 text-sm">
+          <thead class="bg-blue-100 text-gray-800">
+            <tr>
+              <th class="border px-4 py-2 text-left">Distribution of Marks for Internal Assessment</th>
+              <th class="border px-4 py-2 text-left">First Year (Total: 40 Marks)</th>
+              <th class="border px-4 py-2 text-left">Semesters (Total: 40 Marks)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2 font-medium text-gray-700">Maximum Marks</td>
+              <td class="border px-4 py-2">20 (Tests) + 20 (Class Work)</td>
+              <td class="border px-4 py-2">20 (Tests) + 20 (Class Work)</td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2 font-medium text-gray-700">Assessment Criteria</td>
+              <td class="border px-4 py-2">Average of 3 Unit Tests & Regular Class Work Exercises</td>
+              <td class="border px-4 py-2">Average of 2 Unit Tests & Regular Class Work Exercises</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
+      <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+        <li>Each Unit Test will be conducted for a duration of <strong>2 hours</strong> with a maximum of <strong>40 marks</strong>.</li>
+        <li><strong>Part A:</strong> 4 questions × 5 marks = 20 marks.</li>
+        <li><strong>Part B:</strong> 2 questions × 10 marks = 20 marks.</li>
+        <li>Semester drawing exams shall follow the Board End Examination pattern.</li>
+        <li>All drawing exercises are to be filed in serial order and secured for further scrutiny by competent authority.</li>
+      </ul>
+    </div>
+
+    <!-- Laboratory Courses -->
+    <div>
+      <h4 class="text-lg font-semibold text-gray-700 mb-2">(ii) Laboratory Courses</h4>
+      <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-1">
+        <li>Students' performance in Laboratories / Workshops shall be assessed for <strong>40 marks</strong> during the year/semester in each practical course.</li>
+        <li>
+          Evaluation for Laboratory Courses (other than Drawing Courses):
+          <ul class="list-decimal list-inside ml-6 space-y-1">
+            <li>Instruction shall be task/competency-based as delineated in laboratory sheets, prepared by SBTET, AP & NITTTR-ECV.</li>
+            <li>Internal assessment shall be based on the tasks performed as specified in the laboratory sheets available on the SBTET website.</li>
+            <li>End-semester evaluation question papers shall also be task-based and prepared by SBTET.</li>
+          </ul>
+        </li>
+        <li>Internal assessment in Labs / Workshops / Survey Field work shall be conducted by the concerned teacher.</li>
+        <li>
+          For practical examinations (except Drawing), there shall be two examiners:
+          <ul class="list-decimal list-inside ml-6 space-y-1">
+            <li>External Examiner — appointed by the Principal in consultation with HoD, preferably from:
+              <ul class="list-disc list-inside ml-6">
+                <li>Nearby Industry</li>
+                <li>Govt/Semi-Govt organizations (R&B, PWD, PR, Railways, BSNL, APSRTC, APSEB, etc.)</li>
+                <li>Govt/University Engineering College</li>
+                <li>HoD/Senior Lecturer (Selection Grade II) from Govt Polytechnic</li>
+              </ul>
+            </li>
+            <li>Internal Examiner — concerned teacher responsible for internal assessment.</li>
+          </ul>
+        </li>
+        <li>The end examination shall be held along with all theory papers in respect of Drawing.</li>
+        <li>Practical question papers shall test multiple skills — handling, testing, troubleshooting, repair, assembling, dismantling, etc.</li>
+        <li>All internal assessment records (theory & practical) must be maintained for official inspection.</li>
+      </ul>
+
+      <!-- Industrial Training Table -->
+      <div class="mt-6">
+        <p class="text-gray-700 mb-3">
+          In diploma programs having Industrial Training, internal assessment and summative evaluation shall be done as follows:
+        </p>
+
+        <div class="overflow-x-auto">
+          <table class="min-w-full border border-gray-300 text-sm">
+            <thead class="bg-blue-100 text-gray-800">
+              <tr>
+                <th class="border px-4 py-2">Assessment No.</th>
+                <th class="border px-4 py-2">Upon Completion of</th>
+                <th class="border px-4 py-2">By</th>
+                <th class="border px-4 py-2">Based On</th>
+                <th class="border px-4 py-2">Max Marks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2 text-center">1</td>
+                <td class="border px-4 py-2 text-center">12 weeks</td>
+                <td class="border px-4 py-2">
+                  1. Faculty Guide<br>
+                  2. Industry Mentor
+                </td>
+                <td class="border px-4 py-2">Learning outcomes as per the scheme of assessment</td>
+                <td class="border px-4 py-2 text-center">120</td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 text-center">2</td>
+                <td class="border px-4 py-2 text-center">22 weeks</td>
+                <td class="border px-4 py-2">
+                  1. Faculty Guide<br>
+                  2. Industry Mentor
+                </td>
+                <td class="border px-4 py-2">Learning outcomes as per the scheme of assessment</td>
+                <td class="border px-4 py-2 text-center">120</td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 text-center">3</td>
+                <td class="border px-4 py-2 text-center">24 weeks</td>
+                <td class="border px-4 py-2">
+                  1. Faculty Member<br>
+                  2. HoD Concerned<br>
+                  3. External Examiner
+                </td>
+                <td class="border px-4 py-2">
+                  1. Demonstration of skill – 30 Marks<br>
+                  2. Training Report – 20 Marks<br>
+                  3. Viva Voce – 10 Marks
+                </td>
+                <td class="border px-4 py-2 text-center">60</td>
+              </tr>
+              <tr class="bg-gray-100 font-semibold">
+                <td colspan="4" class="border px-4 py-2 text-right">TOTAL</td>
+                <td class="border px-4 py-2 text-center">300</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-gray-700 mt-3">
+          Each staff member, including the Head of Section, shall be assigned a batch of 10–15 students for assessment during Industrial Training.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Rules Section */}
       <div className="grid lg:grid-cols-3 gap-8">
