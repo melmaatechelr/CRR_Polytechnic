@@ -87,20 +87,7 @@ const ContactUs = () => {
       designation: 'Principal',
       phone: '+91-9912342028',
       email: ' principal.crrpoly@gmail.com'
-    },
-    {
-      name: 'Prof. Vice Principal Name',
-      designation: 'Vice Principal',
-      phone: '+91-XXXX-XXXXXX',
-      email: 'viceprincipal@crrpolytechnic.edu.in'
-    },
-    {
-      name: 'Mr. Registrar Name',
-      designation: 'Registrar',
-      phone: '+91-XXXX-XXXXXX',
-      email: 'registrar@crrpolytechnic.edu.in'
-    }
-  ];
+    }  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12">
