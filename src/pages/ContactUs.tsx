@@ -37,7 +37,8 @@ const ContactUs = () => {
       title: 'Address',
       details: [
         'SIR C R REDDY POLYTECHNIC',
-        'Vatluru, 534007',
+        'NEAR VATLURU FLYOVER',
+        'VATLURU,ELURU,534007',
         'Andhra Pradesh, India'
       ],
       color: 'from-blue-500 to-blue-600'
