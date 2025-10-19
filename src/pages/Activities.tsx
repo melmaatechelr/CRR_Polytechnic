@@ -83,33 +83,6 @@ const Activities = () => {
     }
   ];
 
-  const upcomingEvents = [
-    {
-      title: 'TechFest 2024',
-      date: '2024-03-15',
-      time: '9:00 AM',
-      venue: 'Main Auditorium',
-      type: 'Technical',
-      description: 'Annual technical symposium featuring project exhibitions, coding competitions, and tech talks.'
-    },
-    {
-      title: 'Cultural Evening',
-      date: '2024-03-20',
-      time: '6:00 PM',
-      venue: 'Open Auditorium',
-      type: 'Cultural',
-      description: 'An evening of music, dance, and cultural performances by students.'
-    },
-    {
-      title: 'Sports Tournament',
-      date: '2024-03-25',
-      time: '8:00 AM',
-      venue: 'Sports Ground',
-      type: 'Sports',
-      description: 'Inter-department sports competition including cricket, football, and athletics.'
-    }
-  ];
-
   const achievements = [
     {
       title: 'State Level Robotics Competition',
