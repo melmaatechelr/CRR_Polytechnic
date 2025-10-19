@@ -23,14 +23,6 @@ const Facilities = () => {
       color: 'from-blue-500 to-blue-600',
       headerDescription: 'Modern, well-ventilated classrooms equipped with smart boards and audio-visual systems',
       description: 'The lecture halls in our diploma college are designed to provide a comfortable and effective learning environment for students. Each hall is spacious, well-ventilated, and equipped with modern teaching aids such as projectors, whiteboards, and audio systems to support interactive learning. The seating arrangements are well-planned to ensure clear visibility and audibility for every student. Special care is taken to maintain proper lighting and ventilation, creating a pleasant atmosphere for academic sessions. Some lecture halls are also fitted with smart classroom facilities, enabling digital learning and multimedia presentations. With their structured layout and academic ambience, these lecture halls encourage active participation and help students focus better during classes.',
-      features: [
-        '25 spacious lecture halls',
-        'Smart board technology',
-        'Audio-visual equipment',
-        'Air-conditioned rooms',
-        'Comfortable seating for 60 students',
-        'Wi-Fi connectivity'
-      ],
       image: '/FACILITIES/LECTUREHALLS.png'
     },
     {
@@ -40,14 +32,6 @@ const Facilities = () => {
       color: 'from-green-500 to-green-600',
       headerDescription: 'State-of-the-art laboratories with modern equipment for practical learning',
       description: 'State-of-the-art laboratories with modern equipment for practical learning',
-      features: [
-        '50+ specialized laboratories',
-        'Latest equipment and instruments',
-        'Safety protocols implemented',
-        'Individual workstations',
-        'Expert lab assistants',
-        'Regular equipment maintenance'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -57,14 +41,6 @@ const Facilities = () => {
       color: 'from-purple-500 to-purple-600',
       headerDescription: 'Comprehensive library with vast collection of books, journals, and digital resources',
       description: 'Comprehensive library with vast collection of books, journals, and digital resources',
-      features: [
-        '25,000+ books collection',
-        'Digital library access',
-        'Technical journals and magazines',
-        'Internet browsing facility',
-        'Reading rooms with 200 seats',
-        'Reference section'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -74,14 +50,6 @@ const Facilities = () => {
       color: 'from-orange-500 to-orange-600',
       headerDescription: 'Comfortable accommodation facilities for outstation students',
       description: 'Comfortable accommodation facilities for outstation students',
-      features: [
-        'Separate hostels for boys and girls',
-        'Accommodation for 500+ students',
-        'Mess facility with nutritious food',
-        '24/7 security',
-        'Recreation rooms',
-        'Wi-Fi connectivity'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -91,14 +59,6 @@ const Facilities = () => {
       color: 'from-red-500 to-red-600',
       headerDescription: 'Air-conditioned seminar hall for conferences, workshops, and special events',
       description: 'Air-conditioned seminar hall for conferences, workshops, and special events',
-      features: [
-        'Seating capacity of 300',
-        'Central air conditioning',
-        'Advanced audio-visual systems',
-        'Stage with modern lighting',
-        'Wireless microphone system',
-        'Recording facilities'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -108,14 +68,6 @@ const Facilities = () => {
       color: 'from-teal-500 to-teal-600',
       headerDescription: 'Indoor sports facilities for recreation and competitive games',
       description: 'Indoor sports facilities for recreation and competitive games',
-      features: [
-        'Table tennis tables',
-        'Badminton courts',
-        'Chess and carrom boards',
-        'Gymnasium equipment',
-        'Yoga and meditation hall',
-        'Sports equipment storage'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -125,14 +77,6 @@ const Facilities = () => {
       color: 'from-green-500 to-green-600',
       headerDescription: 'Extensive outdoor sports facilities for various games and athletics',
       description: 'Extensive outdoor sports facilities for various games and athletics',
-      features: [
-        'Cricket ground with pavilion',
-        'Football field',
-        'Basketball courts',
-        'Volleyball courts',
-        'Athletic track',
-        'Sports equipment room'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -142,14 +86,6 @@ const Facilities = () => {
       color: 'from-pink-500 to-pink-600',
       headerDescription: 'Large open-air auditorium for cultural events and large gatherings',
       description: 'Large open-air auditorium for cultural events and large gatherings',
-      features: [
-        'Seating capacity of 1000+',
-        'Stage with professional lighting',
-        'Sound system with amplifiers',
-        'Green room facilities',
-        'Parking area',
-        'Emergency exits'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -159,14 +95,6 @@ const Facilities = () => {
       color: 'from-yellow-500 to-yellow-600',
       headerDescription: 'Hygienic canteen serving fresh and nutritious food at affordable prices',
       description: 'Hygienic canteen serving fresh and nutritious food at affordable prices',
-      features: [
-        'Seating for 200 students',
-        'Hygienic food preparation',
-        'Variety of cuisines',
-        'Affordable pricing',
-        'Fresh ingredients daily',
-        'Clean dining environment'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -176,14 +104,6 @@ const Facilities = () => {
       color: 'from-gray-500 to-gray-600',
       headerDescription: 'On-campus banking facility for student and staff convenience',
       description: 'On-campus banking facility for student and staff convenience',
-      features: [
-        'ATM facility available 24/7',
-        'Account opening services',
-        'Loan assistance for students',
-        'Fee payment facility',
-        'Money transfer services',
-        'Financial counseling'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -193,14 +113,6 @@ const Facilities = () => {
       color: 'from-cyan-500 to-cyan-600',
       headerDescription: 'On-campus mineral water plant ensuring pure drinking water supply',
       description: 'On-campus mineral water plant ensuring pure drinking water supply',
-      features: [
-        'RO purification system',
-        'Regular quality testing',
-        'Bottled water production',
-        'Water coolers in all buildings',
-        'Maintenance by trained staff',
-        'Eco-friendly packaging'
-      ],
       image: '/api/placeholder/400/300'
     },
     {
@@ -210,14 +122,6 @@ const Facilities = () => {
       color: 'from-amber-500 to-amber-600',
       headerDescription: 'Renewable energy initiative with solar power generation for campus needs',
       description: 'Renewable energy initiative with solar power generation for campus needs',
-      features: [
-        '500 KW solar power plant',
-        'Reduced electricity costs',
-        'Environment-friendly energy',
-        'Battery backup system',
-        'Grid-tied solar system',
-        'Regular maintenance program'
-      ],
       image: '/api/placeholder/400/300'
     }
   ];
@@ -263,27 +167,11 @@ const Facilities = () => {
                 )}
 
                 {/* Description */}
-                <div className="mb-6">
+                <div>
                   <p className="text-gray-700 leading-relaxed text-justify">
                     {facility.description}
                   </p>
                 </div>
-
-                {/* Features */}
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Key Features</h3>
-                <ul className="space-y-3 mb-6">
-                  {facility.features.map((feature, index) => (
-                    <li key={index} className="flex items-start text-gray-700">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Action Button */}
-                <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-md hover:shadow-lg">
-                  View Gallery
-                </button>
               </div>
             </div>
           ))}
