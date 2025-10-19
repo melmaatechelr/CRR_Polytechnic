@@ -72,15 +72,6 @@ const ContactUs = () => {
     }
   ];
 
-  const departments = [
-    { name: 'Admissions Office', phone: '+91-XXXX-XXXXXX', email: 'admissions@crrpolytechnic.edu.in' },
-    { name: 'Academic Office', phone: '+91-XXXX-XXXXXX', email: 'academic@crrpolytechnic.edu.in' },
-    { name: 'Examination Cell', phone: '+91-XXXX-XXXXXX', email: 'exams@crrpolytechnic.edu.in' },
-    { name: 'Placement Cell', phone: '+91-XXXX-XXXXXX', email: 'placements@crrpolytechnic.edu.in' },
-    { name: 'Accounts Office', phone: '+91-XXXX-XXXXXX', email: 'accounts@crrpolytechnic.edu.in' },
-    { name: 'Hostel Office', phone: '+91-XXXX-XXXXXX', email: 'hostel@crrpolytechnic.edu.in' }
-  ];
-
   const keyPersonnel = [
     {
       name: ' CH.SATISH BABU, M.TECH',
