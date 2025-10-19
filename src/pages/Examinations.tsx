@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   FileText,
   Bell,
-  Calendar,
   Download,
   AlertCircle,
   CheckCircle,
@@ -16,30 +15,6 @@ const Examinations = () => {
   const toggleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
-
-  const examSchedule = [
-    {
-      exam: 'Mid-Semester Examination',
-      semester: 'All Semesters',
-      date: 'March 15-20, 2024',
-      status: 'upcoming',
-      subjects: ['Theory', 'Practical'],
-    },
-    {
-      exam: 'End-Semester Examination',
-      semester: 'All Semesters',
-      date: 'May 10-25, 2024',
-      status: 'scheduled',
-      subjects: ['Theory', 'Practical', 'Project Evaluation'],
-    },
-    {
-      exam: 'Supplementary Examination',
-      semester: 'All Semesters',
-      date: 'July 5-15, 2024',
-      status: 'scheduled',
-      subjects: ['Theory', 'Practical'],
-    },
-  ];
 
   const notifications = [
     {
@@ -134,84 +109,17 @@ const Examinations = () => {
         </p>
       </div>
 
-      {/* Examination Pattern and Grading System */}
-      <div className="grid lg:grid-cols-2 gap-8">
-        {/* Pattern */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">
-            Examination Pattern
-          </h3>
-          <div className="space-y-4">
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-blue-800 mb-2">
-                Theory Examinations
-              </h4>
-              <ul className="text-sm text-blue-700 space-y-1">
-                <li>• Duration: 3 hours</li>
-                <li>• Maximum Marks: 80</li>
-                <li>• Internal Assessment: 20 marks</li>
-                <li>• Passing Marks: 35% (28 marks)</li>
-              </ul>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg">
-              <h4 className="font-semibold text-green-800 mb-2">
-                Practical Examinations
-              </h4>
-              <ul className="text-sm text-green-700 space-y-1">
-                <li>• Duration: 3-4 hours</li>
-                <li>• Maximum Marks: 50</li>
-                <li>• Continuous Assessment: 25 marks</li>
-                <li>• Passing Marks: 35% (18 marks)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Grading */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">
-            Grading System
-          </h3>
-          <div className="space-y-3">
-            {[
-              { grade: 'O', range: '90-100', points: '10', desc: 'Outstanding' },
-              { grade: 'A+', range: '80-89', points: '9', desc: 'Excellent' },
-              { grade: 'A', range: '70-79', points: '8', desc: 'Very Good' },
-              { grade: 'B+', range: '60-69', points: '7', desc: 'Good' },
-              { grade: 'B', range: '50-59', points: '6', desc: 'Above Average' },
-              { grade: 'C', range: '40-49', points: '5', desc: 'Average' },
-              { grade: 'P', range: '35-39', points: '4', desc: 'Pass' },
-              { grade: 'F', range: '0-34', points: '0', desc: 'Fail' },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="flex justify-between items-center py-2 border-b border-gray-200 last:border-b-0"
-              >
-                <div className="flex items-center space-x-4">
-                  <span className="font-bold text-lg text-gray-800 w-8">
-                    {item.grade}
-                  </span>
-                  <span className="text-gray-600">{item.desc}</span>
-                </div>
-                <div className="text-right">
-                  <div className="text-sm text-gray-600">{item.range}%</div>
-                  <div className="text-xs text-gray-500">
-                    {item.points} points
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Examination Regulations Accordion Section */}
       <div className="bg-white rounded-xl shadow-lg p-8">
         <h3 className="text-2xl font-bold text-gray-800 mb-6">
           Examination Regulations
         </h3>
         <div className="space-y-4">
-          <AccordionItem index={1} title="1.1 Eligibility (Attendance to Appear for the End Examination)">
+          {/* Part A */}
+          <AccordionItem
+            index={1}
+            title="1.1 Eligibility (Attendance to Appear for the End Examination)"
+          >
             <ul className="list-disc pl-6 space-y-2 text-sm">
               <li>
                 A candidate shall be permitted to appear for the end examination
@@ -295,12 +203,14 @@ const Examinations = () => {
             </div>
           </AccordionItem>
 
+          {/* Part B - Practical Courses */}
           <AccordionItem index={4} title="1.4 Internal Assessment Scheme">
-            <p className="text-sm">
-              Internal assessment consists of mid exams, assignments, and
-              dynamic learning activities.
+            <p className="text-sm mb-2">
+              Internal assessment consists of mid exams, assignments, and dynamic learning activities.
             </p>
-            <div className="overflow-x-auto mt-4">
+
+            {/* Theory assessment table */}
+            <div className="overflow-x-auto mb-4">
               <table className="min-w-full text-sm border border-gray-200">
                 <thead className="bg-gray-100">
                   <tr>
@@ -310,9 +220,7 @@ const Examinations = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="p-2 border">
-                      Mid Examinations (Mid-1, Mid-2, Mid-3)
-                    </td>
+                    <td className="p-2 border">Mid Examinations (Mid-1, Mid-2, Mid-3)</td>
                     <td className="p-2 border">40</td>
                   </tr>
                   <tr>
@@ -321,96 +229,103 @@ const Examinations = () => {
                   </tr>
                   <tr>
                     <td className="p-2 border">
-                      Dynamic Learning Activities (Projects, Seminars, Quizzes,
-                      etc.)
+                      Dynamic Learning Activities (Projects, Seminars, Quizzes)
                     </td>
                     <td className="p-2 border">5</td>
-                  </tr>
-                  <tr className="font-semibold bg-gray-50">
-                    <td className="p-2 border">Total</td>
-                    <td className="p-2 border">50</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-sm mt-4">
-              Internal marks are scaled down to 20. Practical courses include
-              continuous assessment, and drawing/lab evaluations follow SBTET
-              norms.
+
+            {/* Practical Courses Part B */}
+            <h4 className="font-semibold mb-2">Practical Courses</h4>
+
+            {/* Drawing Courses Table */}
+            <div className="overflow-x-auto mb-4">
+              <table className="min-w-full text-sm border border-gray-200">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="p-2 border">Assessment</th>
+                    <th className="p-2 border">First Year (Total 40)</th>
+                    <th className="p-2 border">Semesters (Total 40)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="p-2 border">Unit Tests Average</td>
+                    <td className="p-2 border">20</td>
+                    <td className="p-2 border">20</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 border">Regular Class Work</td>
+                    <td className="p-2 border">20</td>
+                    <td className="p-2 border">20</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p className="text-sm mb-2">
+              Each first year engineering drawing test duration: 2 hours. Exercises filed in serial order.
+            </p>
+
+            {/* Laboratory Courses */}
+            <h5 className="font-semibold mb-1">Laboratory Courses</h5>
+            <ul className="list-disc pl-6 text-sm space-y-1">
+              <li>Performance assessed for 40 marks per practical.</li>
+              <li>
+                Internal assessment task-based as per SBTET lab sheets.
+              </li>
+              <li>Two examiners for practical exams except drawing.</li>
+              <li>
+                Records of all assessments maintained for inspection.
+              </li>
+            </ul>
+
+            {/* Industrial Training Table */}
+            <h5 className="font-semibold mt-4 mb-2">Industrial Training Assessment</h5>
+            <div className="overflow-x-auto">
+              <table className="min-w-full text-sm border border-gray-200">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="p-2 border">Assessment No</th>
+                    <th className="p-2 border">Completion</th>
+                    <th className="p-2 border">By</th>
+                    <th className="p-2 border">Based On</th>
+                    <th className="p-2 border">Max Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="p-2 border">1</td>
+                    <td className="p-2 border">12 weeks</td>
+                    <td className="p-2 border">Faculty & Training Mentor</td>
+                    <td className="p-2 border">Learning outcomes</td>
+                    <td className="p-2 border">120</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 border">2</td>
+                    <td className="p-2 border">22 weeks</td>
+                    <td className="p-2 border">Faculty & Training Mentor</td>
+                    <td className="p-2 border">Learning outcomes</td>
+                    <td className="p-2 border">120</td>
+                  </tr>
+                  <tr>
+                    <td className="p-2 border">3</td>
+                    <td className="p-2 border">24 weeks</td>
+                    <td className="p-2 border">Faculty, HoD, External</td>
+                    <td className="p-2 border">Demonstration + Report + Viva</td>
+                    <td className="p-2 border">300</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p className="text-sm mt-2">
+              Each staff member (including HoS) assigned 10–15 students for assessment.
             </p>
           </AccordionItem>
         </div>
-      </div>
-
-      {/* Examination Schedule */}
-      <div className="bg-white rounded-xl shadow-lg p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6">
-          Examination Schedule
-        </h3>
-        <div className="space-y-4">
-          {examSchedule.map((exam, index) => (
-            <div
-              key={index}
-              className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h4 className="text-xl font-bold text-gray-800">
-                    {exam.exam}
-                  </h4>
-                  <p className="text-gray-600">{exam.semester}</p>
-                </div>
-                <span
-                  className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                    exam.status === 'upcoming'
-                      ? 'bg-yellow-100 text-yellow-800'
-                      : exam.status === 'scheduled'
-                      ? 'bg-blue-100 text-blue-800'
-                      : 'bg-green-100 text-green-800'
-                  }`}
-                >
-                  {exam.status.charAt(0).toUpperCase() +
-                    exam.status.slice(1)}
-                </span>
-              </div>
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="text-sm text-gray-600">
-                    Date: <span className="font-semibold">{exam.date}</span>
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Subjects: {exam.subjects.join(', ')}
-                  </p>
-                </div>
-                <button className="text-blue-600 hover:text-blue-800 font-semibold text-sm">
-                  View Details
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Rules Section */}
-      <div className="grid lg:grid-cols-3 gap-8">
-        {examRules.map((section, index) => (
-          <div key={index} className="bg-white rounded-xl shadow-lg p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">
-              {section.category}
-            </h3>
-            <ul className="space-y-3">
-              {section.rules.map((rule, ruleIndex) => (
-                <li
-                  key={ruleIndex}
-                  className="flex items-start text-sm text-gray-700"
-                >
-                  <span className="text-blue-600 mr-2 mt-1">•</span>
-                  {rule}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
       </div>
     </div>
   );
@@ -427,7 +342,6 @@ const Examinations = () => {
         </p>
       </div>
 
-      {/* Notifications List */}
       <div className="bg-white rounded-xl shadow-lg overflow-hidden">
         <div className="bg-blue-600 text-white p-6">
           <h3 className="text-xl font-bold flex items-center">
@@ -439,48 +353,46 @@ const Examinations = () => {
           {notifications.map((notification, index) => (
             <div
               key={index}
-              className="p-6 hover:bg-gray-50 transition-colors"
+              className="p-6 hover:bg-gray-50 transition-colors flex justify-between items-start"
             >
-              <div className="flex items-start justify-between">
-                <div className="flex items-start space-x-4 flex-1">
-                  <div
-                    className={`p-2 rounded-full ${
-                      notification.type === 'deadline'
-                        ? 'bg-red-100'
-                        : notification.type === 'info'
-                        ? 'bg-blue-100'
-                        : notification.type === 'schedule'
-                        ? 'bg-yellow-100'
-                        : 'bg-green-100'
-                    }`}
-                  >
-                    {notification.type === 'deadline' ? (
-                      <AlertCircle className="text-red-600" size={20} />
-                    ) : notification.type === 'info' ? (
-                      <FileText className="text-blue-600" size={20} />
-                    ) : notification.type === 'schedule' ? (
-                      <Calendar className="text-yellow-600" size={20} />
-                    ) : (
-                      <CheckCircle className="text-green-600" size={20} />
-                    )}
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-800 mb-1">
-                      {notification.title}
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-2">
-                      {notification.description}
-                    </p>
-                    <p className="text-xs text-gray-500">
-                      Date: {notification.date}
-                    </p>
-                  </div>
+              <div className="flex items-start space-x-4 flex-1">
+                <div
+                  className={`p-2 rounded-full ${
+                    notification.type === 'deadline'
+                      ? 'bg-red-100'
+                      : notification.type === 'info'
+                      ? 'bg-blue-100'
+                      : notification.type === 'schedule'
+                      ? 'bg-yellow-100'
+                      : 'bg-green-100'
+                  }`}
+                >
+                  {notification.type === 'deadline' ? (
+                    <AlertCircle className="text-red-600" size={20} />
+                  ) : notification.type === 'info' ? (
+                    <FileText className="text-blue-600" size={20} />
+                  ) : notification.type === 'schedule' ? (
+                    <ChevronDown className="text-yellow-600" size={20} />
+                  ) : (
+                    <CheckCircle className="text-green-600" size={20} />
+                  )}
                 </div>
-                <button className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center space-x-1">
-                  <Download size={16} />
-                  <span>Download</span>
-                </button>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-1">
+                    {notification.title}
+                  </h4>
+                  <p className="text-sm text-gray-600 mb-2">
+                    {notification.description}
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Date: {notification.date}
+                  </p>
+                </div>
               </div>
+              <button className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center space-x-1">
+                <Download size={16} />
+                <span>Download</span>
+              </button>
             </div>
           ))}
         </div>
@@ -490,7 +402,6 @@ const Examinations = () => {
 
   return (
     <section className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-16">
-      {/* Tabs */}
       <div className="flex flex-wrap justify-center mb-10 gap-4">
         {[
           { id: 'about', label: 'About Examinations' },
