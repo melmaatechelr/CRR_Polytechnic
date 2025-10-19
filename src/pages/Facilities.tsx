@@ -118,7 +118,7 @@ MECHANICAL 113      97`,
       color: 'from-gray-500 to-gray-600',
       headerDescription: 'On-campus banking facility for student and staff convenience',
       description: 'On-campus banking facility for student and staff convenience',
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/BANK.png'
     },
     {
       id: 'water-plant',
