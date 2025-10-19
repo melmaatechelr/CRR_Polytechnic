@@ -46,7 +46,7 @@ const Navigation = ({ currentPage, onPageChange }) => {
       label: 'Placements',
       hasDropdown: true,
       submenu: [
-        'About TNP',
+        'About TNP Cell',
         'Campus Placements',
         'Recruiters',
         'MOUs',
