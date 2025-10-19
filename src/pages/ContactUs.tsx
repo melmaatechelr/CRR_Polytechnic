@@ -86,7 +86,7 @@ const ContactUs = () => {
       name: 'Dr. Principal Name',
       designation: 'Principal',
       phone: '+91-XXXX-XXXXXX',
-      email: 'principal@crrpolytechnic.edu.in'
+      email: ' principal.crrpoly@gmail.com'
     },
     {
       name: 'Prof. Vice Principal Name',
