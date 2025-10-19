@@ -99,14 +99,7 @@ MECHANICAL 113      97`,
       icon: Presentation,
       color: 'from-red-500 to-red-600',
       headerDescription: 'A well-organized parking facility is essential in any educational institution',
-      description: 'A well-organized parking facility is essential in any educational institution, including diploma colleges, to ensure convenience, safety, and orderliness for students, faculty, and visitors. Below is a comprehensive outline of parking-related facilities and considerations:
-
-Parking Area Infrastructure
-1.Designated zones for two-wheelers and four-wheelers
-2.Separate areas for students, faculty, staff and visitors
-3.Covered parking to protect vehicles from weather
-4.Proper surfacing to avoid dust and mud
-',
+      description: 'Air-conditioned seminar hall for conferences, workshops, and special events',
       image: '/FACILITIES/PARKING FACILITY.png'
     },
     {
