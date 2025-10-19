@@ -21,7 +21,7 @@ const Facilities = () => {
       name: 'Lecture Halls',
       icon: Building,
       color: 'from-blue-500 to-blue-600',
-      description: 'Modern, well-ventilated classrooms equipped with smart boards and audio-visual systems',
+      description: 'The lecture halls in our diploma college are designed to provide a comfortable and effective learning environment for students. Each hall is spacious, well-ventilated, and equipped with modern teaching aids such as projectors, whiteboards, audio systems to support interactive learning. The seating arrangements are well-planned to ensure clear visibility and audibility for every student. Special care is taken to maintain proper lighting and ventilation, creating a pleasant atmosphere for academic sessions. Some lecture halls are also fitted with smart classroom facilities, enabling digital learning and multimedia presentations. With their structured layout and academic ambience, these lecture halls encourage active participation and help students focus better during classes.',
       features: [
         '25 spacious lecture halls',
         'Smart board technology',
@@ -30,7 +30,7 @@ const Facilities = () => {
         'Comfortable seating for 60 students',
         'Wi-Fi connectivity'
       ],
-      image: '/api/placeholder/400/300'
+      image: '/FACILITIES/LECTUREHALLS.png'
     },
     {
       id: 'laboratories',
@@ -235,9 +235,19 @@ const Facilities = () => {
 
               {/* Content */}
               <div className="p-6">
-                {/* Image placeholder */}
-                <div className="bg-gray-200 h-48 rounded-lg mb-6 flex items-center justify-center">
-                  <facility.icon size={64} className="text-gray-400" />
+                {/* Image */}
+                <div className="bg-gray-200 h-48 rounded-lg mb-6 overflow-hidden">
+                  {facility.image.startsWith('/FACILITIES/') ? (
+                    <img
+                      src={facility.image}
+                      alt={facility.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <facility.icon size={64} className="text-gray-400" />
+                    </div>
+                  )}
                 </div>
 
                 {/* Features */}
