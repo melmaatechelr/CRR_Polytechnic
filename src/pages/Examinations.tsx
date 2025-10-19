@@ -17,30 +17,6 @@ const Examinations = () => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
 
-  const examSchedule = [
-    {
-      exam: 'Mid-Semester Examination',
-      semester: 'All Semesters',
-      date: 'March 15-20, 2024',
-      status: 'upcoming',
-      subjects: ['Theory', 'Practical'],
-    },
-    {
-      exam: 'End-Semester Examination',
-      semester: 'All Semesters',
-      date: 'May 10-25, 2024',
-      status: 'scheduled',
-      subjects: ['Theory', 'Practical', 'Project Evaluation'],
-    },
-    {
-      exam: 'Supplementary Examination',
-      semester: 'All Semesters',
-      date: 'July 5-15, 2024',
-      status: 'scheduled',
-      subjects: ['Theory', 'Practical'],
-    },
-  ];
-
   const notifications = [
     {
       title: 'Examination Form Submission Deadline',
@@ -339,55 +315,6 @@ const Examinations = () => {
               norms.
             </p>
           </AccordionItem>
-        </div>
-      </div>
-
-      {/* Examination Schedule */}
-      <div className="bg-white rounded-xl shadow-lg p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6">
-          Examination Schedule
-        </h3>
-        <div className="space-y-4">
-          {examSchedule.map((exam, index) => (
-            <div
-              key={index}
-              className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h4 className="text-xl font-bold text-gray-800">
-                    {exam.exam}
-                  </h4>
-                  <p className="text-gray-600">{exam.semester}</p>
-                </div>
-                <span
-                  className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                    exam.status === 'upcoming'
-                      ? 'bg-yellow-100 text-yellow-800'
-                      : exam.status === 'scheduled'
-                      ? 'bg-blue-100 text-blue-800'
-                      : 'bg-green-100 text-green-800'
-                  }`}
-                >
-                  {exam.status.charAt(0).toUpperCase() +
-                    exam.status.slice(1)}
-                </span>
-              </div>
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="text-sm text-gray-600">
-                    Date: <span className="font-semibold">{exam.date}</span>
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Subjects: {exam.subjects.join(', ')}
-                  </p>
-                </div>
-                <button className="text-blue-600 hover:text-blue-800 font-semibold text-sm">
-                  View Details
-                </button>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
 
