@@ -83,7 +83,7 @@ const ContactUs = () => {
 
   const keyPersonnel = [
     {
-      name: 'Dr. Principal Name',
+      name: ' CH.SATISH BABU, M.TECH',
       designation: 'Principal',
       phone: '+91-XXXX-XXXXXX',
       email: ' principal.crrpoly@gmail.com'
