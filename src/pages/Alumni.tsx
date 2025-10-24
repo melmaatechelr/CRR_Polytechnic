@@ -454,7 +454,7 @@ const Alumni = () => {
             </div>
             <div className="flex items-center justify-center">
               <Phone size={20} className="mr-2" />
-              <span>+91-XXXX-XXXXXX</span>
+              <span>+91-9959112939</span>
             </div>
           </div>
         </div>
