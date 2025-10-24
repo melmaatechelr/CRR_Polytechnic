@@ -4,10 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Gallery = () => {
   const slides = [
-    { id: 1, image: "public/GALLERY/INDUSRIAL VIST FOLLOWED BY OUR STUDENTS.jpeg" },
-    { id: 2, image: "public/GALLERY/TECH FEST FOLLOWED BY OUR STUDENTS.jpeg" },
-    { id: 3, image: "public/GALLERY/STATE LEVEL IPSGM 2025.jpeg" },
+    { id: 1, image: "public/GALLERY/ENTRY GATE.jpg" },
+    { id: 2, image: "public/GALLERY/STATE LEVEL IPSGM.jpg" },
+    { id: 3, image: "public/GALLERY/INDUSRIAL VIST FOLLOWED BY OUR STUDENTS.jpeg" },
     { id: 4, image: "public/GALLERY/CME LAB.jpg" },
+    { id: 5, image: "public/GALLERY/TECH FEST FOLLOWED BY OUR STUDENTS.jpeg" },
 
   ];
 
