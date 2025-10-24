@@ -25,7 +25,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 group hover:text-amber-300 transition-colors duration-300">
                 <Clock size={14} className="sm:w-4 sm:h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
-                <span className="font-semibold tracking-wide">Mon-Fri: 10 AM-4.30 PM</span>
+                <span className="font-semibold tracking-wide">Mon-Fri: 10 AM - 4.30 PM</span>
               </div>
             </div>
           </div>

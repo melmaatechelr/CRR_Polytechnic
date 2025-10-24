@@ -64,10 +64,10 @@ const Home = () => {
 
   // Quick Links
   const quickLinks = [
-    { name: 'Facilities', icon: Building, color: 'bg-gradient-to-br from-blue-500 to-blue-600', url: '/Facilities' },
-    { name: 'Examinations', icon: Award, color: 'bg-gradient-to-br from-green-500 to-green-600', url: '/Examinations' },
-    { name: 'Placements', icon: Trophy, color: 'bg-gradient-to-br from-orange-500 to-orange-600', url: '/Placements' },
-    { name: 'Gallery', icon: Camera, color: 'bg-gradient-to-br from-pink-500 to-pink-600', url: '/Gallery' }
+    { name: 'Facilities', icon: Building, color: 'bg-gradient-to-br from-blue-500 to-blue-600', url: '/facilities' },
+    { name: 'Examinations', icon: Award, color: 'bg-gradient-to-br from-green-500 to-green-600', url: '/examinations' },
+    { name: 'Placements', icon: Trophy, color: 'bg-gradient-to-br from-orange-500 to-orange-600', url: '/placements' },
+    { name: 'Gallery', icon: Camera, color: 'bg-gradient-to-br from-pink-500 to-pink-600', url: '/gallery' }
   ];
 
   return (
@@ -86,7 +86,7 @@ const Home = () => {
           </h1>
           <div className="bg-white/15 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-10 border border-white/30 shadow-2xl">
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-100 leading-relaxed font-medium">
-              A premier private polytechnic in Andhra Pradesh with a <span className="text-amber-300 font-bold">legacy of 40+ years</span>,
+              A premier private polytechnic in Andhra Pradesh with a <span className="text-amber-300 font-bold">legacy of 40 years</span>,
               featuring state-of-the-art laboratories, expansive infrastructure, and a team of
               <span className="text-blue-300 font-bold"> highly qualified and experienced faculty</span>.
             </p>
@@ -96,7 +96,9 @@ const Home = () => {
               Apply Now
               <ChevronRight className="ml-2 sm:ml-3 group-hover:translate-x-2 transition-transform w-5 h-5 sm:w-6 sm:h-6" />
             </button>
-           
+            <button className="group border-2 border-white/60 text-white px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-5 rounded-xl sm:rounded-2xl font-bold hover:bg-white hover:text-blue-900 transition-all duration-300 backdrop-blur-sm text-sm sm:text-base md:text-lg hover:shadow-2xl transform hover:-translate-y-2">
+              Virtual Campus Tour
+            </button>
           </div>
         </div>
       </section>
