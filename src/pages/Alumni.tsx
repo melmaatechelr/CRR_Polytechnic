@@ -447,11 +447,7 @@ const Alumni = () => {
           <p className="mb-6 text-blue-100">
             For more information about alumni activities or to get involved, please contact us:
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 text-lg">
-            <div className="flex items-center justify-center">
-              <Mail size={20} className="mr-2" />
-              <span>alumni@crrpolytechnic.edu.in</span>
-            </div>
+  
             <div className="flex items-center justify-center">
               <Phone size={20} className="mr-2" />
               <span>+91-9959112939</span>
