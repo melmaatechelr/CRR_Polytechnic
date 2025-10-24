@@ -67,8 +67,7 @@ const Alumni = () => {
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Alumni Association</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Our Alumni Association connects graduates across the globe, fostering lifelong relationships 
-          and creating opportunities for professional and personal growth.
+        The Alumni Association has been officially established and is duly registered under Registration No. 321/2012, functioning to foster a strong network among former students and support ongoing initiatives for the growth and development of its members.
         </p>
       </div>
 
