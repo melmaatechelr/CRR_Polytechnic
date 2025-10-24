@@ -11,11 +11,11 @@ const Header = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 md:gap-6 w-full sm:w-auto">
               <div className="flex items-center gap-1.5 sm:gap-2 group hover:text-amber-300 transition-colors duration-300">
                 <Phone size={14} className="sm:w-4 sm:h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
-                <span className="font-semibold tracking-wide">88122 31407</span>
+                <span className="font-semibold tracking-wide">9912342028</span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 group hover:text-amber-300 transition-colors duration-300">
                 <Mail size={14} className="sm:w-4 sm:h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
-                <span className="font-semibold tracking-wide truncate">info@crrpolytechnic.edu.in</span>
+                <span className="font-semibold tracking-wide truncate">principal.crrpoly@gmail.com</span>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 md:gap-6 w-full sm:w-auto">
@@ -25,7 +25,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 group hover:text-amber-300 transition-colors duration-300">
                 <Clock size={14} className="sm:w-4 sm:h-4 group-hover:scale-110 transition-transform flex-shrink-0" />
-                <span className="font-semibold tracking-wide">Mon-Fri: 9AM-5PM</span>
+                <span className="font-semibold tracking-wide">Mon-Fri: 10 AM-4.30 PM</span>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Header = () => {
             <div className="bg-gradient-to-br from-white/15 to-white/5 backdrop-blur-md rounded-xl sm:rounded-2xl px-6 py-5 sm:px-8 sm:py-6 md:px-10 md:py-8 border border-white/30 shadow-2xl">
               <div className="flex items-center justify-center lg:justify-end mb-2">
                 <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-amber-400 rounded-full mr-2 sm:mr-3 animate-pulse shadow-lg"></div>
-                <p className="text-slate-100 text-sm sm:text-base font-semibold tracking-wide">40 Years of Excellence in</p>
+                <p className="text-slate-100 text-sm sm:text-base font-semibold tracking-wide">40+ Years of Excellence in</p>
               </div>
               <p className="text-white font-bold text-xl sm:text-2xl md:text-3xl bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent mb-2 sm:mb-3">
                 Technical Education

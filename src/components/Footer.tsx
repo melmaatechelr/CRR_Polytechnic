@@ -117,7 +117,7 @@ const Footer = () => {
                     </div>
                     <div>
                       <p className="font-bold text-lg">Address</p>
-                      <p className="text-base">Vatluru, 534007, Andhra Pradesh</p>
+                      <p className="text-base">Near Vatluru Flyover,Vatluru, Eluru, 534007,Andhra Pradesh, India</p>
                     </div>
                   </div>
                   <div className="flex items-center text-slate-300 group hover:text-white transition-colors">
