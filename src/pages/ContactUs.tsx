@@ -63,9 +63,8 @@ const ContactUs = () => {
       icon: Clock,
       title: 'Office Hours',
       details: [
-        'Monday - Friday: 9:00 AM - 5:00 PM',
-        'Saturday: 9:00 AM - 1:00 PM',
-        'Sunday: Closed'
+        'Monday - Saturday: 10:00 AM - 4:30 PM',
+       'Sunday: Closed'
       ],
       color: 'from-orange-500 to-orange-600'
     }

@@ -72,7 +72,7 @@ const Navigation = ({ currentPage, onPageChange }) => {
         'Directory'
       ]
     },
-    { id: 'activities', label: 'Activities', hasDropdown: false },
+  
     { id: 'facilities', label: 'Facilities', hasDropdown: false },
     { id: 'gallery', label: 'Gallery', hasDropdown: false },
     { id: 'contact', label: 'Contact Us', hasDropdown: false }

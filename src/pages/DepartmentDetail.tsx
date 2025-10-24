@@ -7,11 +7,7 @@ const DepartmentDetail = ({ department, onBack }) => {
   const tabs = [
     { id: 'home', label: 'Home', icon: Building },
     { id: 'faculty', label: 'Faculty', icon: Users },
-    { id: 'infrastructure', label: 'Infrastructure & Labs', icon: Building },
-    { id: 'students', label: 'Student Info', icon: Users },
-    { id: 'timetable', label: 'Time Table', icon: Clock },
-    { id: 'events', label: 'Events', icon: Calendar },
-    { id: 'achievements', label: 'Achievements', icon: Trophy }
+    { id: 'infrastructure', label: 'Infrastructure & Labs', icon: Building }
   ];
 
   const sampleFaculty = [
