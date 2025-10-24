@@ -24,26 +24,7 @@ const Examinations: React.FC = () => {
       type: "deadline",
       description: "Last date for examination form submission with late fee",
     },
-    {
-      title: "Hall Ticket Release",
-      date: "2024-03-10",
-      type: "info",
-      description:
-        "Hall tickets for mid-semester examinations available for download",
-    },
-    {
-      title: "Practical Examination Schedule",
-      date: "2024-03-05",
-      type: "schedule",
-      description:
-        "Practical examination timetable published for all departments",
-    },
-    {
-      title: "Result Declaration",
-      date: "2024-02-28",
-      type: "result",
-      description: "Previous semester results declared and available online",
-    },
+
   ];
 
   const examRules = [
