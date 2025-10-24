@@ -4,42 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Gallery = () => {
   const slides = [
-    {
-      id: 1,
-      title: "Main Building",
-      description: "The iconic main building of CRR Polytechnic",
-      image: "/api/placeholder/1200/600",
-    },
-    {
-      id: 2,
-      title: "Computer Lab",
-      description: "State-of-the-art computer laboratory",
-      image: "/api/placeholder/1200/600",
-    },
-    {
-      id: 3,
-      title: "Graduation Ceremony",
-      description: "Convocation ceremony for graduating students",
-      image: "/api/placeholder/1200/600",
-    },
-    {
-      id: 4,
-      title: "Robotics Competition",
-      description: "Students showcasing their robotics projects",
-      image: "/api/placeholder/1200/600",
-    },
-    {
-      id: 5,
-      title: "Auditorium",
-      description: "Modern auditorium for events and seminars",
-      image: "/api/placeholder/1200/600",
-    },
-    {
-      id: 6,
-      title: "Group Study",
-      description: "Students collaborating on projects",
-      image: "/api/placeholder/1200/600",
-    },
+    { id: 1, image: "public/GALLERY/INDUSRIAL VIST FOLLOWED BY OUR STUDENTS.jpeg" },
+    { id: 2, image: "public/GALLERY/TECH FEST FOLLOWED BY OUR STUDENTS.jpeg" },
+    { id: 3, image: "public/GALLERY/STATE LEVEL IPSGM 2025.jpeg" },
+    { id: 4, image: "public/GALLERY/CME LAB.jpg" },
+
   ];
 
   const [current, setCurrent] = useState(0);
@@ -62,36 +31,20 @@ const Gallery = () => {
 
   return (
     <div className="relative w-full min-h-screen bg-gray-900 flex flex-col items-center justify-center overflow-hidden">
-      {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 drop-shadow-lg">
-        CRR Polytechnic Photo Gallery
-      </h1>
-
       {/* Slide container */}
       <div className="relative w-[90%] md:w-[80%] h-[60vh] rounded-2xl overflow-hidden shadow-2xl">
         <AnimatePresence>
-          <motion.div
+          <motion.img
             key={slides[current].id}
+            src={slides[current].image}
+            alt={`Slide ${current + 1}`}
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 1 }}
-            className="absolute inset-0"
-          >
-            <img
-              src={slides[current].image}
-              alt={slides[current].title}
-              className="w-full h-full object-cover"
-            />
-            {/* Overlay gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-
-            {/* Text overlay */}
-            <div className="absolute bottom-10 left-10 text-white max-w-lg">
-              <h2 className="text-3xl font-bold mb-2">{slides[current].title}</h2>
-              <p className="text-lg text-gray-200">{slides[current].description}</p>
-            </div>
-          </motion.div>
+            whileHover={{ scale: 1.05 }} // subtle zoom effect
+            className="w-full h-full object-cover transition-transform duration-500"
+          />
         </AnimatePresence>
 
         {/* Navigation Buttons */}
