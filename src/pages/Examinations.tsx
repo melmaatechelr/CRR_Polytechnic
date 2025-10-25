@@ -17,15 +17,13 @@ const Examinations: React.FC = () => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
 
-  const notifications = [
-    {
-      title: "Examination Form Submission Deadline",
-      date: "2024-03-01",
-      type: "deadline",
-      description: "Last date for examination form submission with late fee",
-    },
-
-  ];
+const notifications = [
+  {
+    title: "State Board of Technical Education Notifications",
+    type: "announcement",
+    description: "Official updates and circulars from the State Board of Technical Education.",
+  },
+];
 
   const examRules = [
     {
@@ -447,15 +445,17 @@ const Examinations: React.FC = () => {
                     <p className="text-sm text-gray-600 mb-2">
                       {notification.description}
                     </p>
-                    <p className="text-xs text-gray-500">
-                      Date: {notification.date}
-                    </p>
                   </div>
                 </div>
-                <button className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center space-x-1">
-                  <Download size={16} />
-                  <span>Download</span>
-                </button>
+                
+                <button
+  onClick={() => window.open("https://apsbtet.ap.gov.in/#!/index", "_blank")}
+  className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center space-x-1"
+>
+  <Download size={16} />
+  <span>Official Site</span>
+</button>
+
               </div>
             </div>
           ))}
