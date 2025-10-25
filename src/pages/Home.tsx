@@ -96,9 +96,7 @@ const Home = () => {
               Apply Now
               <ChevronRight className="ml-2 sm:ml-3 group-hover:translate-x-2 transition-transform w-5 h-5 sm:w-6 sm:h-6" />
             </button>
-            <button className="group border-2 border-white/60 text-white px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-5 rounded-xl sm:rounded-2xl font-bold hover:bg-white hover:text-blue-900 transition-all duration-300 backdrop-blur-sm text-sm sm:text-base md:text-lg hover:shadow-2xl transform hover:-translate-y-2">
-              Virtual Campus Tour
-            </button>
+         
           </div>
         </div>
       </section>
