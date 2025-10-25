@@ -21,45 +21,50 @@ const Alumni = () => {
     { label: 'Success Stories', value: '100+', icon: BookOpen }
   ];
 
-  const notableAlumni = [
-    {
-      name: 'Mr. Alumni Name 1',
-      year: '2010',
-      department: 'Computer Engineering',
-      position: 'Senior Software Engineer',
-      company: 'Google India',
-      achievement: 'Leading AI research projects'
-    },
-    {
-      name: 'Ms. Alumni Name 2',
-      year: '2012',
-      department: 'Civil Engineering',
-      position: 'Project Manager',
-      company: 'L&T Construction',
-      achievement: 'Managing infrastructure projects worth ₹500 crores'
-    },
-    {
-      name: 'Mr. Alumni Name 3',
-      year: '2015',
-      department: 'Mechanical Engineering',
-      position: 'Entrepreneur',
-      company: 'Own Manufacturing Unit',
-      achievement: 'Founded successful manufacturing company'
-    }
+  // Example executive committee (used in Directory)
+  const executiveCommittee = [
+    { sno: 1, name: 'G Krishna Reddy', designation: 'President' },
+    { sno: 2, name: 'Kaja Srinivasa Rao', designation: 'Vice-President' },
+    { sno: 3, name: 'Y Venkata Ramana', designation: 'Secretary' },
+    { sno: 4, name: 'K Kondaiah Chowdary', designation: 'Joint Secretary' },
+    { sno: 5, name: 'N N V A Prasad', designation: 'Treasurer' },
+    { sno: 6, name: 'N Subrahmaneswara Rao', designation: 'Executive Member' },
+    { sno: 7, name: 'S V Satya Pahanindranath', designation: 'Executive Member' },
+    { sno: 8, name: 'B Srinivasa Rao', designation: 'Executive Member' },
+    { sno: 9, name: 'R Praveen Kumar', designation: 'Executive Member' },
+    { sno: 10, name: 'D ANITHA KUMARI', designation: 'Member' },
+    { sno: 11, name: 'K SRINIVASA RAO', designation: 'Member' },
+    { sno: 12, name: 'K NAVEEN BALAJI', designation: 'Member' },
+    { sno: 13, name: 'A RAMA KRISHNA', designation: 'Member' },
+    { sno: 14, name: 'A D L CHARI', designation: 'Member' },
+    { sno: 15, name: 'K RAMU', designation: 'Member' },
+    { sno: 16, name: 'S N MANIKYALA RAO', designation: 'Member' },
+    { sno: 17, name: 'MOHAMMAD SIDDIGH', designation: 'Member' },
+    { sno: 18, name: 'K HARSHITHA LAKSHMI', designation: 'Member' },
+    { sno: 19, name: 'D MOHAN KALYANI', designation: 'Member' },
+    { sno: 20, name: 'K YAMINI', designation: 'Member' },
+    { sno: 21, name: 'M HARI RANJITHA NALINI', designation: 'Member' }
   ];
 
   const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // replace this with real submit logic (API / firebase / sheet) as needed
     console.log('Form submitted:', formData);
-    // Handle form submission logic here
     alert('Registration submitted successfully!');
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      graduationYear: '',
+      department: '',
+      currentCompany: '',
+      designation: '',
+      address: ''
+    });
   };
 
   const renderAssociation = () => (
@@ -67,7 +72,8 @@ const Alumni = () => {
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Alumni Association</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        The Alumni Association has been officially established and is duly registered under Registration No. 321/2012, functioning to foster a strong network among former students and support ongoing initiatives for the growth and development of its members.
+          The Alumni Association has been officially established and is duly registered under Registration No. 321/2012,
+          functioning to foster a strong network among former students and support ongoing initiatives for the growth and development of its members.
         </p>
       </div>
 
@@ -87,15 +93,11 @@ const Alumni = () => {
         <h3 className="text-2xl font-bold text-gray-800 mb-6">About Our Association</h3>
         <div className="prose max-w-none text-gray-700">
           <p className="mb-4">
-            The SIR.C RAMLINGA REDDY POLYTECHNIC Alumni Association was established to maintain 
-            strong connections between the institution and its graduates. Our association serves 
-            as a bridge between past, present, and future students, creating a network of 
-            professionals who support each other's growth and success.
+            The SIR.C RAMLINGA REDDY POLYTECHNIC Alumni Association was established to maintain strong connections between the institution and its graduates.
+            Our association serves as a bridge between past, present, and future students, creating a network of professionals who support each other's growth and success.
           </p>
           <p className="mb-4">
-            Through various initiatives, events, and programs, we aim to give back to our alma 
-            mater while providing valuable opportunities for career advancement, mentorship, 
-            and professional networking among our members.
+            Through various initiatives, events, and programs, we aim to give back to our alma mater while providing valuable opportunities for career advancement, mentorship, and professional networking among our members.
           </p>
         </div>
       </div>
@@ -111,10 +113,9 @@ const Alumni = () => {
               'Promote professional networking opportunities',
               'Organize reunions and social events',
               'Facilitate career guidance and job placements'
-            ].map((mission, index) => (
-              <li key={index} className="flex items-center text-blue-700">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                {mission}
+            ].map((mission, idx) => (
+              <li key={idx} className="flex items-center text-blue-700">
+                <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>{mission}
               </li>
             ))}
           </ul>
@@ -130,37 +131,25 @@ const Alumni = () => {
               'Industry insights and updates',
               'Invitation to special events',
               'Professional development workshops'
-            ].map((benefit, index) => (
-              <li key={index} className="flex items-center text-green-700">
-                <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-                {benefit}
+            ].map((benefit, idx) => (
+              <li key={idx} className="flex items-center text-green-700">
+                <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>{benefit}
               </li>
             ))}
           </ul>
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-lg p-8">
-        <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Notable Alumni</h3>
-        <div className="grid lg:grid-cols-3 gap-6">
-          {notableAlumni.map((alumni, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-              <div className="text-center mb-4">
-                <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users size={32} className="text-blue-600" />
-                </div>
-                <h4 className="text-lg font-bold text-gray-800">{alumni.name}</h4>
-                <p className="text-blue-600 font-semibold">{alumni.position}</p>
-                <p className="text-gray-600 text-sm">{alumni.company}</p>
-              </div>
-              <div className="space-y-2 text-sm text-gray-600">
-                <p><strong>Graduation:</strong> {alumni.year}</p>
-                <p><strong>Department:</strong> {alumni.department}</p>
-                <p><strong>Achievement:</strong> {alumni.achievement}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Alumni Image Section (kept) */}
+      <div className="flex flex-col items-center my-10">
+        <img
+          src="/Alumni/Alumni_Crr.png"
+          alt="Alumni Group"
+          className="rounded-xl shadow-lg max-w-3xl w-full object-cover"
+        />
+        <p className="text-gray-600 mt-4 text-center text-lg italic">
+          “Our Proud Alumni Members — Inspiring Generations of Excellence”
+        </p>
       </div>
     </div>
   );
@@ -176,9 +165,7 @@ const Alumni = () => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Full Name *
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
               <input
                 type="text"
                 name="name"
@@ -190,9 +177,7 @@ const Alumni = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email Address *
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
               <input
                 type="email"
                 name="email"
@@ -207,9 +192,7 @@ const Alumni = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Phone Number *
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
               <input
                 type="tel"
                 name="phone"
@@ -221,9 +204,7 @@ const Alumni = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Graduation Year *
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Graduation Year *</label>
               <select
                 name="graduationYear"
                 value={formData.graduationYear}
@@ -240,9 +221,7 @@ const Alumni = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Department *
-            </label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Department *</label>
             <select
               name="department"
               value={formData.department}
@@ -262,9 +241,7 @@ const Alumni = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Current Company
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Current Company</label>
               <input
                 type="text"
                 name="currentCompany"
@@ -275,9 +252,7 @@ const Alumni = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Designation
-              </label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Designation</label>
               <input
                 type="text"
                 name="designation"
@@ -290,9 +265,7 @@ const Alumni = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Current Address
-            </label>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Current Address</label>
             <textarea
               name="address"
               value={formData.address}
@@ -324,8 +297,8 @@ const Alumni = () => {
             { title: 'Networking', desc: 'Build professional relationships with fellow alumni' },
             { title: 'Events & Reunions', desc: 'Get invited to exclusive alumni events' },
             { title: 'Industry Updates', desc: 'Stay informed about industry trends and news' }
-          ].map((reason, index) => (
-            <div key={index} className="text-center">
+          ].map((reason, idx) => (
+            <div key={idx} className="text-center">
               <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
                 <UserPlus size={24} />
               </div>
@@ -338,129 +311,79 @@ const Alumni = () => {
     </div>
   );
 
-  const renderDirectory = () => {
-    const executiveCommittee = [
-      { sno: 1, name: 'G Krishna Reddy', designation: 'President' },
-      { sno: 2, name: 'Kaja Srinivasa Rao', designation: 'Vice-President' },
-      { sno: 3, name: 'Y Venkata Ramana', designation: 'Secretary' },
-      { sno: 4, name: 'K Kondaiah Chowdary', designation: 'Joint Secretary' },
-      { sno: 5, name: 'N N V A Prasad', designation: 'Treasurer' },
-      { sno: 6, name: 'N Subrahmaneswara Rao', designation: 'Executive Member' },
-      { sno: 7, name: 'S V Satya Pahanindranath', designation: 'Executive Member' },
-      { sno: 8, name: 'B Srinivasa Rao', designation: 'Executive Member' },
-      { sno: 9, name: 'R Praveen Kumar', designation: 'Executive Member' },
-      { sno: 10, name: 'D ANITHA KUMARI', designation: 'Member' },
-      { sno: 11, name: 'K SRINIVASA RAO', designation: 'Member' },
-      { sno: 12, name: 'K NAVEEN BALAJI', designation: 'Member' },
-      { sno: 13, name: 'A RAMA KRISHNA', designation: 'Member' },
-      { sno: 14, name: 'A D L CHARI', designation: 'Member' },
-      { sno: 15, name: 'K RAMU', designation: 'Member' },
-      { sno: 16, name: 'S N MANIKYALA RAO', designation: 'Member' },
-      { sno: 17, name: 'MOHAMMAD SIDDIGH', designation: 'Member' },
-      { sno: 18, name: 'K HARSHITHA LAKSHMI', designation: 'Member' },
-      { sno: 19, name: 'D MOHAN KALYANI', designation: 'Member' },
-      { sno: 20, name: 'K YAMINI', designation: 'Member' },
-      { sno: 21, name: 'M HARI RANJITHA NALINI', designation: 'Member' }
-    ];
+  const renderDirectory = () => (
+    <div className="space-y-8">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Alumni Directory</h2>
+        <p className="text-lg text-gray-600">Executive Committee and Alumni Activities</p>
+      </div>
 
-    return (
-      <div className="space-y-8">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Alumni Directory</h2>
-          <p className="text-lg text-gray-600">
-            Executive Committee and Alumni Activities
-          </p>
-        </div>
+      {/* Executive Committee Table */}
+      <div className="bg-white rounded-xl shadow-lg p-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-4 border-b-4 border-blue-500 inline-block pb-2">Executive Committee</h3>
+        <p className="text-gray-700 mt-4 mb-6">Executive Committee was formed periodically. The following are the active committee members as on date:</p>
 
-        {/* Executive Committee Section */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 border-b-4 border-blue-500 inline-block pb-2">
-            Executive Committee
-          </h3>
-          <p className="text-gray-700 mt-4 mb-6">
-            Executive Committee was formed periodically. The following are the active committee members as on date:
-          </p>
-
-          <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-300">
-              <thead className="bg-blue-600 text-white">
-                <tr>
-                  <th className="border border-gray-300 px-6 py-3 text-left font-semibold">S.NO</th>
-                  <th className="border border-gray-300 px-6 py-3 text-left font-semibold">NAME OF THE MEMBER</th>
-                  <th className="border border-gray-300 px-6 py-3 text-left font-semibold">DESIGNATION</th>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border border-gray-300">
+            <thead className="bg-blue-600 text-white">
+              <tr>
+                <th className="border border-gray-300 px-6 py-3 text-left font-semibold">S.NO</th>
+                <th className="border border-gray-300 px-6 py-3 text-left font-semibold">NAME OF THE MEMBER</th>
+                <th className="border border-gray-300 px-6 py-3 text-left font-semibold">DESIGNATION</th>
+              </tr>
+            </thead>
+            <tbody>
+              {executiveCommittee.map((member, idx) => (
+                <tr key={member.sno} className={idx % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                  <td className="border border-gray-300 px-6 py-3 text-gray-700">{member.sno}</td>
+                  <td className="border border-gray-300 px-6 py-3 text-gray-800 font-medium">{member.name}</td>
+                  <td className="border border-gray-300 px-6 py-3 text-gray-700">{member.designation}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {executiveCommittee.map((member, index) => (
-                  <tr
-                    key={member.sno}
-                    className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}
-                  >
-                    <td className="border border-gray-300 px-6 py-3 text-gray-700">{member.sno}</td>
-                    <td className="border border-gray-300 px-6 py-3 text-gray-800 font-medium">{member.name}</td>
-                    <td className="border border-gray-300 px-6 py-3 text-gray-700">{member.designation}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        {/* Alumni Activities Section */}
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-green-500 inline-block pb-2">
-            Alumni Activities
-          </h3>
+      {/* Alumni Activities */}
+      <div className="bg-white rounded-xl shadow-lg p-8">
+        <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b-4 border-green-500 inline-block pb-2">Alumni Activities</h3>
 
-          <div className="space-y-6 text-gray-700 leading-relaxed">
-            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h4 className="font-bold text-blue-800 mb-3 text-lg">Guest Lectures by Alumni</h4>
-              <p>
-                One of the activities of the Association is to arrange and invite guest lectures by the Alumni for the final year students. The lectures shall be pertaining to the relevant topics of all disciplines of students in a rotation manner. Alumni employed in foreign countries like United States, Dubai etc., are very much interested in visiting the college and sharing their experience.
-              </p>
-            </div>
-
-            <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
-              <h4 className="font-bold text-green-800 mb-3 text-lg">Career Guidance & Job Opportunities</h4>
-              <p>
-                This helps in a great way for our young Diploma passed out engineers to get to know the various avenues available for jobs. This is also another way for our students to know about the various non-formal continuing education programs especially in professional fields. The Alumni Association acts as a liaison between employed experienced engineers with fresh Diploma holders.
-              </p>
-            </div>
-
-            <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
-              <h4 className="font-bold text-orange-800 mb-3 text-lg">Committees & Department Associations</h4>
-              <p className="mb-3">
-                Separate committees consisting of Alumni members are formed to monitor the regular activities including:
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Arranging invited lectures for Polytechnic College students</li>
-                <li>Publishing newsletters</li>
-                <li>Department associations constituted for each department with one or two alumni as members</li>
-              </ul>
-            </div>
+        <div className="space-y-6 text-gray-700 leading-relaxed">
+          <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+            <h4 className="font-bold text-blue-800 mb-3 text-lg">Guest Lectures by Alumni</h4>
+            <p>One of the activities of the Association is to arrange and invite guest lectures by the Alumni for the final year students.</p>
           </div>
-        </div>
 
-        {/* Contact Information */}
-        <div className="bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg p-8 text-white text-center">
-          <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
-          <p className="mb-6 text-blue-100">
-            For more information about alumni activities or to get involved, please contact us:
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 text-lg">
-            <div className="flex items-center justify-center">
-              <Mail size={20} className="mr-2" />
-              <span>alumni@crrpolytechnic.edu.in</span>
-            </div>
-            <div className="flex items-center justify-center">
-              <Phone size={20} className="mr-2" />
-              <span>+91-9959112939</span>
-            </div>
+          <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+            <h4 className="font-bold text-green-800 mb-3 text-lg">Career Guidance & Job Opportunities</h4>
+            <p>This helps young diploma pass-outs to get to know the various avenues available for jobs and professional development.</p>
+          </div>
+
+          <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
+            <h4 className="font-bold text-orange-800 mb-3 text-lg">Committees & Department Associations</h4>
+            <p>Separate committees consisting of Alumni members are formed to monitor the regular activities including invited lectures, newsletters, and departmental associations.</p>
           </div>
         </div>
       </div>
-    );
-  };
+
+      {/* Contact Information */}
+      <div className="bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg p-8 text-white text-center">
+        <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
+        <p className="mb-6 text-blue-100">For more information about alumni activities or to get involved, please contact us:</p>
+        <div className="flex flex-col sm:flex-row justify-center gap-6 text-lg">
+          <div className="flex items-center justify-center">
+            <Mail size={20} className="mr-2" />
+            <span>alumni@crrpolytechnic.edu.in</span>
+          </div>
+          <div className="flex items-center justify-center">
+            <Phone size={20} className="mr-2" />
+            <span>+91-9959112939</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
   const tabs = [
     { id: 'association', label: 'Alumni Association', icon: Users },
@@ -474,7 +397,7 @@ const Alumni = () => {
         {/* Tab Navigation */}
         <div className="bg-white rounded-xl shadow-lg mb-8 overflow-hidden">
           <div className="flex">
-            {tabs.map((tab) => (
+            {tabs.map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
