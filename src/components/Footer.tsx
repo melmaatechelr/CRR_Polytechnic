@@ -126,7 +126,7 @@ const Footer = () => {
                     </div>
                     <div>
                       <p className="font-bold text-lg">Phone</p>
-                      <p className="text-base font-semibold">88122 31407</p>
+                      <p className="text-base font-semibold">9912342028</p>
                     </div>
                   </div>
                   <div className="flex items-center text-slate-300 group hover:text-white transition-colors">
@@ -135,7 +135,7 @@ const Footer = () => {
                     </div>
                     <div>
                       <p className="font-bold text-lg">Email</p>
-                      <p className="text-base">info@crrpolytechnic.edu.in</p>
+                      <p className="text-base">principal.crrpoly@gmail.com</p>
                     </div>
                   </div>
                 </div>

@@ -90,19 +90,7 @@ const Navigation = ({ currentPage, onPageChange }) => {
     }`}>
       <div className="container mx-auto px-4">
         {/* Top Bar - Contact Info (Hidden on mobile) */}
-        <div className="hidden xl:flex justify-end items-center py-2 border-b border-gray-100">
-          <div className="flex items-center space-x-6 text-sm">
-            <div className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
-              <Phone size={14} />
-              <span className="font-medium">88122 31407</span>
-            </div>
-            <div className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
-              <Mail size={14} />
-              <span className="font-medium">info@crrpolytechnic.edu.in</span>
-            </div>
-          </div>
-        </div>
-
+       
         <div className="flex justify-between items-center">
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-1 flex-wrap py-1">
